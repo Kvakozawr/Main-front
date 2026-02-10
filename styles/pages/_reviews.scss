@@ -1,0 +1,96 @@
+.reviews-page{
+    background-image: url(../../images/heading-bg.png);
+    background-size: contain;
+    background-repeat: repeat-y;
+    width: 100%;
+    height: 100%;
+    margin-top: 0px;
+    .page-container{
+        padding: 40px 0px;
+        width: 100%;
+    }
+
+    .reviews-header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .title{
+            font-size: 60px;
+            font-weight: 600;
+            font-family: "Ms Madi", cursive;
+            letter-spacing: 6px;
+        }
+
+        .review-button{
+            padding: 10px 100px;
+            font-size: 30px;
+            font-weight: bold;
+            color: white;
+            background-color: #86c46e;
+            border: 1px solid #86c46e;
+            border-radius: 50px;
+            text-transform: uppercase;
+            transition: 0.2s ease-in all;
+            box-shadow: 0px 4px 9px 2px rgba(0, 0, 0, 0.45);
+        }
+    }
+
+    .page-main {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); // максимум 3 в ряд
+        column-gap: 100px;
+        row-gap: 25px;
+
+        @media (max-width: 1024px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (max-width: 600px) {
+            grid-template-columns: 1fr;
+        }
+
+        .review {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+            text-align: center;
+        }
+
+        .image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center top;
+            }
+        }
+
+        .nickname {
+            color: #477C90;
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        .text {
+            padding: 16px 20px;
+            border-radius: 25px;
+            background: linear-gradient(to bottom, #5FA197, #3C6B8C);
+            color: #FFFFFF;
+            line-height: 1.5;
+            text-align: left;
+        }
+    }
+
+    @media (max-width: 1440px) {
+        .page-container{
+            padding: 40px 100px;
+        }
+    }
+}

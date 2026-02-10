@@ -1,0 +1,313 @@
+.overlays-page{
+    .page-container{
+        max-width: none;
+        width: 100%;
+    }
+
+    .contractors{
+        background-image: url(../../images/concept-art/bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-bottom: 50px;
+        &-content{
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 70px;
+            row-gap: 10px;
+            justify-content: center;
+            .contractor{
+                text-decoration: none;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: calc(33.333% - 70px);
+                max-width: 400px;
+                .image{
+                    width: 160px;
+                    height: auto;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                
+                .name{
+                    text-transform: uppercase;
+                    color: #ff8196;
+                    font-size: 20px;
+                    font-weight: 900;
+                }
+
+                .roles{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .role{
+                        font-size: 14px;
+                        text-transform: uppercase;
+                        color: #377493;
+                    }
+                }
+            }
+        }
+    }
+    
+    .contractors-cards{
+        margin-top: 100px;
+        .contractor-card{
+            position: relative;
+            margin-bottom: 100px;
+            .card-header{
+                position: relative;
+                .line{
+                    z-index: 1;
+                    position: relative;
+                    width: 100%;
+                    border-top: 1px dashed #92beea;
+                }
+
+                &-contractor{
+                    max-width: 1400px;
+                    z-index: 2;
+                    position: relative;
+                    top: -20px;
+                    left: 300px;
+                    display: inline-flex;
+                    align-items: center;
+                    .image{
+                        width: 120px;
+                        height: auto;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+                    .name{
+                        color: #92beea;
+                        text-transform: uppercase;
+                        font-size: 30px;
+                        font-weight: 900;
+                    }
+
+                    .roles{
+                        font-weight: 300;
+                        color: #443252;
+                        text-transform: uppercase;
+                        font-size: 12px;
+                    }
+
+                    .status{
+                        width: 200px;
+                        height: 25px;
+                    }
+                }
+            }
+            .card-main{
+                overflow: hidden;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: auto;
+                padding: 30px 0px;
+                background: #f4f7ff;
+                .left-flower{
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .included{
+                    z-index: 2;
+                    position: relative;
+                    margin-bottom: 50px;
+                    .title{
+                        text-align: center;
+                        color: #443252;
+                        font-size: 20px;
+                        font-weight: 300;
+                        text-transform: uppercase;
+                    }
+                    .text{
+                        color: #92beea;
+                        font-size: 14px;
+                        font-weight: 300;
+                        text-transform: uppercase;
+                    }
+                }
+                .services{
+                    z-index: 2;
+                    position: relative;
+                    width: 80%;
+                    height: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    .divider{
+                        text-align: center;
+                        color: #443252;
+                        text-transform: uppercase;
+                        font-size: 20px;
+                        font-weight: 300;
+                    }
+                    .base, .extra{
+                       display: grid;
+                        grid-template-columns: repeat(5, 1fr); // максимум 5 в ряд
+                        gap: 24px;
+                    }
+
+                    .service{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        width: 100%;
+                        .name{
+                            text-align: center;
+                            color: #92beea;
+                            font-size: 26px;
+                            font-weight: 700;
+                            margin-bottom: 10px;
+                        }
+
+                        .expressions{
+                            color: #443252;
+                        }
+
+                        .amount{
+                            text-transform: uppercase;
+                            padding: 5px 15px;
+                            color: #443252;
+                            font-weight: 300;
+                            font-size: 20px;
+                            background: white;
+                            border-radius: 30px;
+                            border: 1px dashed #92beea;
+                        }
+                    }
+                }
+            }
+            .card-footer{
+                margin-top: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .services-desc{
+                    margin-left: 170px;
+                    align-self: flex-start;
+                    .edit-info{
+                        color: #92beea;
+                        font-weight: 300;
+                        text-transform: uppercase;
+                        .amount{
+                            color: rgb(68, 50, 82);
+                            font-weight: inherit;
+                            text-transform: inherit;
+                        }
+                    }
+                    
+                    .additional{
+                        color: #92beea;
+                        font-weight: 300;
+                        text-transform: uppercase;
+                        .bold{
+                            color: #92beea;
+                            font-weight: bold;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+
+                .request-button{
+                    margin-top: 30px;
+                    color: #92beea;
+                    border-radius: 30px;
+                    border: 1px dashed #92beea;
+                    text-transform: uppercase;
+                    font-weight: 300;
+                    font-size: 24px;
+                    padding: 10px 30px;
+                }
+            }
+            .discount{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                z-index: 999;
+                position: absolute;
+                bottom: 85px;
+                left: 50%;
+                transform: translateX(-50%);
+                .percent{
+                    display: inline;
+                    position: relative;
+                    .amount{
+                        display: inline;
+                        z-index: 1;
+                        position: relative;
+                        color: #92beea;
+                        font-size: 50px;
+                        font-weight: 900;
+                    }
+                    .symbol{
+                        z-index: 2;
+                        position: absolute;
+                        bottom: -14px;
+                        right: -29px;
+                        color: #443252;
+                        font-size: 40px;
+                        font-weight: 900;
+                    }
+                }
+                .text{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    &-1{
+                        text-transform: uppercase;
+                        color: #443252;
+                        font-size: 20px;
+                        font-weight: 400;
+                    }
+                    &-2{
+                        text-transform: uppercase;
+                        color: #92beea;
+                        font-size: 20px;
+                        font-weight: 400;
+                        font-style: italic;
+                    }
+                }
+            }
+            .examples-left{
+                left: 5%;
+            }
+            .examples-right{
+                right: 5%;
+            }
+            .examples{
+                z-index: 999;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                display: grid;
+                grid-template-columns: repeat(3, 96px);
+                gap: 20px;
+                .example{
+                    width: 96px;
+                    height: 96px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

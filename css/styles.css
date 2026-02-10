@@ -1,0 +1,2866 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap");
+* {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #86c46e;
+  box-sizing: border-box;
+}
+
+body, html {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  width: 100%;
+  flex-grow: 1;
+}
+
+.open {
+  background-image: url(../images/concept-art/open.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.header {
+  z-index: 998;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: white;
+}
+.header-container {
+  max-width: 1400px;
+  padding: 20px 0px;
+}
+.header-link {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 100;
+  color: #86c46e;
+  font-family: "Gabarito", sans-serif;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+}
+.header-logo img {
+  display: block;
+  width: 300px;
+  height: auto;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+@media (max-width: 1024px) {
+  .header-nav {
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+  .header-link {
+    font-size: 16px;
+  }
+  .header-logo img {
+    width: 240px;
+  }
+}
+.footer {
+  z-index: 998;
+  position: relative;
+  background: #171717;
+  flex-shrink: 0;
+  width: 100%;
+  padding-bottom: 75px;
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .copyright {
+  color: white;
+  font-size: 14px;
+}
+.footer .back-to-top {
+  display: flex;
+}
+.footer .back-to-top__text {
+  color: white;
+  font-size: 14px;
+}
+.footer .back-to-top__icon {
+  position: relative;
+  left: 5px;
+  top: 2px;
+}
+.footer .back-to-top:hover {
+  cursor: pointer;
+}
+.footer-links {
+  display: flex;
+  gap: 5px;
+}
+.footer-link img {
+  width: 30px;
+  height: 30px;
+}
+
+.page {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.page-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page-container {
+  z-index: 2;
+  position: relative;
+  max-width: 1400px;
+}
+
+.page-header .title {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 900;
+  color: #86c46e;
+  text-align: center;
+}
+.page-header .title-desc {
+  position: relative;
+  top: -20px;
+  width: 600px;
+  height: auto;
+}
+.page-header .title-desc img {
+  width: 100%;
+  height: 100%;
+}
+
+.home .heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-image: url(../../images/heading-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 180px 0px 315px 0px;
+}
+.home .heading-video {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  width: 700px;
+  height: auto;
+}
+.home .heading-video video {
+  width: 100%;
+  height: 100%;
+}
+.home .heading-title {
+  position: relative;
+}
+.home .heading-title__text {
+  text-transform: uppercase;
+  font-size: 24px;
+  color: #377493;
+}
+.home .heading .leaves {
+  width: 100%;
+  position: absolute;
+  bottom: -100px;
+  left: 0px;
+}
+.home .about-page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+.home .about-page__bg {
+  margin-top: 200px;
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../images/noroot.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.home .about-page .title-desc-about {
+  top: -40px;
+  width: 400px;
+}
+.home .about-page .about-main {
+  margin-top: 200px;
+  max-width: 1400px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.home .about-page .about-main .sticker {
+  width: 30%;
+}
+.home .about-page .about-main .sticker img {
+  width: 100%;
+  height: auto;
+}
+.home .about-page .about-main .content {
+  width: 50%;
+}
+.home .about-page .about-main .content__title {
+  font-size: 20px;
+  color: #98ba66;
+  margin: 0;
+}
+.home .about-page .about-main .content__desc {
+  color: #377493;
+  font-size: 40px;
+  font-weight: 900;
+  margin: 0px 0px 25px 0px;
+}
+.home .about-page .about-main .content .meet-the-team {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.home .about-page .about-main .content .meet-the-team .text {
+  color: #377493;
+  font-size: 22px;
+  margin: 0;
+}
+.home .about-page .about-main .content .meet-the-team .text:nth-child(2) {
+  margin: 25px 0px;
+}
+.home .star-page {
+  margin-top: 250px;
+}
+.home .star-page .star-container {
+  max-width: none;
+  width: 100%;
+}
+.home .star-page .star-header .title-desc {
+  top: -40px;
+  width: 500px;
+}
+.home .star-page .star-main .virtual-star {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 250px;
+}
+.home .star-page .star-main .virtual-star__works {
+  display: flex;
+  flex-direction: column;
+  margin-top: 150px;
+}
+.home .star-page .star-main .star-works {
+  display: flex;
+}
+.home .star-page .star-main .star-works .work {
+  height: 992px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.home .star-page .star-main .work1 {
+  background-image: url(../images/virtual-star/1.jpg);
+}
+.home .star-page .star-main .work2 {
+  background-image: url(../images/virtual-star/2.jpg);
+}
+.home .star-page .star-main .work3 {
+  background-image: url(../images/virtual-star/3.png);
+}
+.home .star-page .star-main .work4 {
+  background-image: url(../images/virtual-star/4.jpg);
+}
+.home .star-page .star-main .work5 {
+  background-image: url(../images/virtual-star/5.png);
+}
+.home .star-page .star-main .work6 {
+  background-image: url(../images/virtual-star/6.jpg);
+}
+.home .our-clients-page {
+  padding-bottom: 50px;
+}
+.home .our-clients-page .our-clients-main {
+  display: flex;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+}
+.home .our-clients-page .our-clients-main__client {
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .our-clients-page .our-clients-main__client img {
+  width: 256px;
+  height: auto;
+}
+.home .review-page {
+  display: flex;
+  flex-direction: column;
+}
+.home .review-page-stroke {
+  width: 100%;
+}
+.home .review-page-stroke img {
+  width: 100%;
+  height: auto;
+}
+.home .review-page .review-main {
+  background-image: url(../images/heading-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 1000px;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.home .review-page .review-main .title {
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.home .review-page .review-main .splide {
+  margin-top: 50px;
+  width: 40%;
+}
+.home .review-page .review-main .splide__slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home .review-page .review-main .review-slide-text {
+  text-align: center;
+  font-size: 22px;
+  color: #377493;
+  font-weight: 300;
+}
+.home .review-page .review-main .review-slide-avatar {
+  margin-top: 20px;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.home .review-page .review-main .review-slide-avatar img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center top;
+     object-position: center top;
+}
+.home .review-page .review-main .review-slide-user {
+  margin-top: 20px;
+  color: #377493;
+  font-weight: bold;
+  font-size: 24px;
+}
+.home .review-page .review-main .review-slide-role {
+  color: #377493;
+  font-weight: 400;
+  font-size: 18px;
+}
+.home .review-page .review-main .splide__arrow {
+  background: white;
+}
+.home .review-page .review-main .splide__arrow svg {
+  fill: #222222;
+}
+.home .review-page .review-main .splide__arrow--prev {
+  left: -5em;
+}
+.home .review-page .review-main .splide__arrow--next {
+  right: -5em;
+}
+.home .review-page .review-main .splide__pagination {
+  display: none;
+}
+.home .review-page .review-main .review-slide-socials {
+  display: flex;
+  gap: 5px;
+}
+.home .review-page .review-main .review-social-link {
+  width: 32px;
+  height: auto;
+}
+.home .review-page .review-main .review-social-link img {
+  fill: #86c46e;
+  background-color: #86c46e;
+  color: #86c46e;
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 1440px) {
+  .home .heading-video {
+    margin-top: 100px;
+  }
+  .home .heading-bg {
+    width: 1440px;
+  }
+  .home .meet-bg {
+    width: 1440px;
+  }
+  .home .leaves {
+    bottom: -251px;
+  }
+  .home .about {
+    margin-top: 300px;
+  }
+  .home .title-desc {
+    top: 59px;
+  }
+  .home .meet-team {
+    margin-top: 100px;
+  }
+  .home .meet-content__desc {
+    margin: 0;
+  }
+  .home .virtual-star {
+    margin-top: 100px;
+  }
+  .home .virtual-star__works {
+    margin-top: 50px;
+  }
+  .home .star-works .work {
+    height: 500px;
+  }
+}
+@media (max-width: 1024px) {
+  .home .heading-bg {
+    width: 1024px;
+  }
+  .home .meet-bg {
+    width: 1024px;
+  }
+  .home .heading-video {
+    width: 600px;
+    margin-top: 0px;
+  }
+  .home .leaves {
+    bottom: -200px;
+  }
+  .home .heading-title__text {
+    font-size: 20px;
+  }
+  .home .about {
+    margin-top: 200px;
+  }
+  .home .meet-team {
+    margin-top: 50px;
+  }
+  .home .title {
+    font-size: 30px;
+  }
+  .home .title-desc {
+    width: 300px;
+    top: 48px;
+  }
+  .home .meet-sticker img {
+    width: 250px;
+    border-radius: 0px 0px 100px 0px;
+  }
+  .home .meet-content__desc {
+    font-size: 30px;
+  }
+  .home .meet-content .text {
+    font-size: 14px;
+  }
+  .home .star-works .work {
+    height: 400px;
+  }
+  .home .virtual-star {
+    margin-top: 50px;
+  }
+  .home .our-clients__images {
+    margin-top: -50px;
+  }
+  .home .our-clients__image {
+    width: 164px;
+  }
+  .home .review-slide-text {
+    font-size: 18px;
+  }
+  .home .review-slide-avatar {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media (max-width: 768px) {
+  .home .heading-bg {
+    width: 768px;
+  }
+  .home .meet-bg {
+    width: 768px;
+  }
+  .home .heading-video {
+    margin-top: 50px;
+  }
+  .home .leaves {
+    bottom: -112px;
+  }
+  .home .about {
+    margin-top: 100px;
+  }
+  .home .meet-sticker img {
+    width: 200px;
+  }
+  .home .meet-content__desc {
+    font-size: 20px;
+  }
+  .home .meet-content .text {
+    font-size: 10px;
+  }
+}
+@media (max-width: 425px) {
+  .home .heading-bg {
+    width: 425px;
+  }
+  .home .meet-bg {
+    width: 425px;
+    height: 230px;
+  }
+  .home .heading-video {
+    width: 200px;
+    margin-top: 25px;
+  }
+  .home .heading-title__text {
+    font-size: 10px;
+  }
+  .home .leaves {
+    bottom: -69px;
+  }
+  .home .title {
+    font-size: 20px;
+  }
+  .home .title-desc {
+    width: 200px;
+    top: 32px;
+  }
+  .home .meet-sticker img {
+    width: 100px;
+    border-radius: 0px 0px 50px 0px;
+  }
+  .home .meet-content__title {
+    font-size: 10px;
+  }
+  .home .meet-content__desc {
+    font-size: 10px;
+  }
+  .home .meet-content .text {
+    font-size: 8px;
+  }
+}
+
+.services-page__bg {
+  position: absolute;
+  width: 1897px;
+  height: 100%;
+  transition: all 0.5s ease-out;
+}
+.services-page__bg img {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 1440px) {
+  .services-page__bg {
+    width: 1440px;
+  }
+}
+@media (max-width: 1024px) {
+  .services-page__bg {
+    width: 1024px;
+  }
+}
+.services-page .services-header__desc {
+  top: -40px;
+  width: 700px;
+}
+@media (max-width: 1440px) {
+  .services-page .services-header__title {
+    font-size: 36px;
+  }
+  .services-page .services-header__desc {
+    width: 600px;
+  }
+}
+.services-page .services-main__list {
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.services-page .services-main__list .list__button {
+  padding: 20px 40px;
+  font-size: 24px;
+  color: white;
+  background-color: #86c46e;
+  border: 1px solid #86c46e;
+  border-radius: 50px;
+  text-transform: uppercase;
+  transition: 0.2s ease-in all;
+}
+.services-page .services-main__list .list__button:hover {
+  cursor: pointer;
+  color: #86c46e;
+  background-color: white;
+}
+@media (max-width: 1440px) {
+  .services-page .services-main__list .list__button {
+    font-size: 20px;
+  }
+}
+
+.main-order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.order-page {
+  width: 100%;
+  max-width: 1400px;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
+.order-title {
+  font-size: 40px;
+  font-weight: 900;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+.order-desc {
+  z-index: 2;
+  width: 900px;
+}
+
+.order-links {
+  position: relative;
+  z-index: 2;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.links-sticker {
+  z-index: 2;
+  position: relative;
+  top: 19px;
+  left: 0px;
+  width: 300px;
+  height: auto;
+}
+
+.links-sticker img {
+  width: 100%;
+  height: 100%;
+}
+
+.links-buttons {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.links-button {
+  padding: 20px 60px;
+  font-size: 24px;
+  color: #86c46e;
+  background-color: white;
+  border: 1px solid #86c46e;
+  border-radius: 50px;
+  text-transform: uppercase;
+  transition: 0.2s ease-in all;
+}
+
+.links-button:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #86c46e;
+}
+
+.order-text {
+  position: relative;
+  z-index: 2;
+  margin-top: 40px;
+  text-align: center;
+  color: #377493;
+  font-size: 24px;
+  font-weight: 300;
+  width: 720px;
+}
+
+.order-page-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.order-bg-wrapper {
+  z-index: 1;
+  overflow: hidden;
+  position: absolute;
+  top: 0px;
+  left: 95px;
+  width: 1706px;
+  height: 100%;
+}
+
+.top-left {
+  z-index: 2;
+  position: absolute;
+  top: -468px;
+  left: -300px;
+  transform: rotate(-30deg);
+  width: 1920px;
+}
+
+.top-left img {
+  width: 100%;
+  height: 100%;
+}
+
+.bot-right {
+  z-index: 1;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+.left-border {
+  position: absolute;
+  top: 0px;
+  left: -54px;
+}
+
+.left-border img {
+  width: 100%;
+  height: 100%;
+}
+
+.dotted-lines {
+  z-index: 2;
+  position: relative;
+  height: 100%;
+  width: 90%;
+  left: 5%;
+  border-left: 1px dashed #86c46e;
+  border-right: 1px dashed #86c46e;
+}
+
+.right-border {
+  position: absolute;
+  top: 0px;
+  right: -54px;
+}
+
+.right-border img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1440px) {
+  .order-bg-wrapper {
+    left: 71px;
+    width: 1297px;
+  }
+}
+@media (max-width: 1024px) {
+  .order-bg-wrapper {
+    left: 51px;
+    width: 921px;
+  }
+  .left-border {
+    left: -75px;
+  }
+  .right-border {
+    right: -85px;
+  }
+  .order-title {
+    font-size: 30px;
+  }
+  .order-desc {
+    width: 700px;
+  }
+}
+.tos-page .page-header .title {
+  font-size: 44px;
+}
+.tos-page .page-main {
+  margin-top: 50px;
+}
+.tos-page .page-main .title {
+  color: #377493;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 100;
+  text-align: center;
+  letter-spacing: 3px;
+}
+.tos-page .page-main .content .text {
+  color: #377493;
+  text-align: center;
+  font-size: 34px;
+  font-weight: 400;
+}
+
+.concept-page .page-container {
+  max-width: none;
+  width: 100%;
+}
+@media (max-width: 1440px) {
+  .concept-page .page-header .title {
+    font-size: 36px;
+  }
+}
+.concept-page .contractors {
+  background-image: url(../../images/concept-art/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 50px;
+}
+.concept-page .contractors-content {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 70px;
+       column-gap: 70px;
+  row-gap: 10px;
+  justify-content: center;
+}
+.concept-page .contractors-content .contractor {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(33.333% - 70px);
+  max-width: 400px;
+}
+.concept-page .contractors-content .contractor .image {
+  width: 160px;
+  height: auto;
+}
+.concept-page .contractors-content .contractor .image img {
+  width: 100%;
+  height: 100%;
+}
+.concept-page .contractors-content .contractor .name {
+  text-transform: uppercase;
+  color: #ff8196;
+  font-size: 20px;
+  font-weight: 900;
+}
+.concept-page .contractors-content .contractor .roles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.concept-page .contractors-content .contractor .roles .role {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #377493;
+}
+.concept-page .contractors-cards {
+  margin-top: 100px;
+}
+.concept-page .contractors-cards .contractor-card {
+  position: relative;
+  margin-bottom: 100px;
+}
+.concept-page .contractors-cards .contractor-card .card-header {
+  position: relative;
+}
+.concept-page .contractors-cards .contractor-card .card-header .line {
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  border-top: 1px dashed #92beea;
+}
+.concept-page .contractors-cards .contractor-card .card-header-contractor {
+  max-width: 1400px;
+  z-index: 2;
+  position: relative;
+  top: -20px;
+  left: 10%;
+  display: inline-flex;
+  align-items: center;
+}
+.concept-page .contractors-cards .contractor-card .card-header-contractor .image {
+  width: 120px;
+  height: auto;
+}
+.concept-page .contractors-cards .contractor-card .card-header-contractor .image img {
+  width: 100%;
+  height: 100%;
+}
+.concept-page .contractors-cards .contractor-card .card-header-contractor .name {
+  color: #92beea;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 900;
+}
+.concept-page .contractors-cards .contractor-card .card-header-contractor .roles {
+  font-weight: 300;
+  color: #443252;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.concept-page .contractors-cards .contractor-card .card-header-contractor .status {
+  width: 200px;
+  height: 25px;
+}
+.concept-page .contractors-cards .contractor-card .card-main {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 460px;
+  background: #f4f7ff;
+}
+.concept-page .contractors-cards .contractor-card .card-main .left-flower {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.concept-page .contractors-cards .contractor-card .card-main .left-flower img {
+  width: 100%;
+  height: 100%;
+}
+.concept-page .contractors-cards .contractor-card .card-main .included {
+  z-index: 2;
+  position: relative;
+  margin-left: 10%;
+  margin-bottom: 50px;
+}
+.concept-page .contractors-cards .contractor-card .card-main .included .title {
+  color: #443252;
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.concept-page .contractors-cards .contractor-card .card-main .included .text {
+  color: #92beea;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.concept-page .contractors-cards .contractor-card .card-main .services {
+  z-index: 2;
+  position: relative;
+  margin-left: 10%;
+  width: 50%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.concept-page .contractors-cards .contractor-card .card-main .services .divider {
+  color: #443252;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 300;
+}
+.concept-page .contractors-cards .contractor-card .card-main .services .base, .concept-page .contractors-cards .contractor-card .card-main .services .extra {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+.concept-page .contractors-cards .contractor-card .card-main .services .service {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.concept-page .contractors-cards .contractor-card .card-main .services .service .name {
+  color: #92beea;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.concept-page .contractors-cards .contractor-card .card-main .services .service .expressions {
+  margin-top: -10px;
+  color: #443252;
+}
+.concept-page .contractors-cards .contractor-card .card-main .services .service .amount {
+  text-transform: uppercase;
+  padding: 5px 15px;
+  color: #443252;
+  font-weight: 300;
+  font-size: 20px;
+  background: white;
+  border-radius: 30px;
+  border: 1px dashed #92beea;
+}
+@media (max-width: 1440px) {
+  .concept-page .contractors-cards .contractor-card .card-main .services .service .name {
+    font-size: 22px;
+  }
+  .concept-page .contractors-cards .contractor-card .card-main .services .service .amount {
+    font-size: 18px;
+  }
+}
+.concept-page .contractors-cards .contractor-card .card-footer {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.concept-page .contractors-cards .contractor-card .card-footer .services-desc {
+  margin-left: 10%;
+  align-self: flex-start;
+}
+.concept-page .contractors-cards .contractor-card .card-footer .services-desc .edit-info {
+  color: #92beea;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.concept-page .contractors-cards .contractor-card .card-footer .services-desc .edit-info .amount {
+  color: rgb(68, 50, 82);
+  font-weight: inherit;
+  text-transform: inherit;
+}
+.concept-page .contractors-cards .contractor-card .card-footer .services-desc .additional {
+  color: #92beea;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.concept-page .contractors-cards .contractor-card .card-footer .request-button {
+  margin-top: 30px;
+  color: #92beea;
+  border-radius: 30px;
+  border: 1px dashed #92beea;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 24px;
+  padding: 10px 30px;
+}
+.concept-page .contractors-cards .contractor-card .card-slider {
+  width: 300px;
+  z-index: 999;
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.concept-page .contractors-cards .contractor-card .card-slider .splide__arrow--prev {
+  left: -2em;
+}
+.concept-page .contractors-cards .contractor-card .card-slider .splide__arrow--next {
+  right: -2em;
+}
+.concept-page .contractors-cards .contractor-card .card-slider .splide__slide img {
+  width: 100%;
+  height: 100%;
+}
+.concept-page .contractors-cards .contractor-card .discount {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 999;
+  position: absolute;
+  top: 50%;
+  right: 30%;
+  transform: translateY(-50%);
+}
+.concept-page .contractors-cards .contractor-card .discount .percent {
+  display: inline;
+  position: relative;
+}
+.concept-page .contractors-cards .contractor-card .discount .percent .amount {
+  display: inline;
+  z-index: 1;
+  position: relative;
+  color: #92beea;
+  font-size: 50px;
+  font-weight: 900;
+}
+.concept-page .contractors-cards .contractor-card .discount .percent .symbol {
+  z-index: 2;
+  position: absolute;
+  bottom: -14px;
+  right: -29px;
+  color: #443252;
+  font-size: 40px;
+  font-weight: 900;
+}
+.concept-page .contractors-cards .contractor-card .discount .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.concept-page .contractors-cards .contractor-card .discount .text-1 {
+  text-transform: uppercase;
+  color: #443252;
+  font-size: 20px;
+  font-weight: 400;
+}
+.concept-page .contractors-cards .contractor-card .discount .text-2 {
+  text-transform: uppercase;
+  color: #92beea;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: italic;
+}
+@media (max-width: 1440px) {
+  .concept-page .contractors-cards .contractor-card .discount .text-1, .concept-page .contractors-cards .contractor-card .discount .text-2 {
+    font-size: 18px;
+  }
+}
+.concept-page .contractors-cards .contractor-card .card-icons {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.concept-page .contractors-cards .contractor-card .card-icons .icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  border: 2px dashed #92beea;
+}
+.concept-page .contractors-cards .contractor-card .card-icons .icon .image {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background-image: url(../../images/concept-art/1.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.model-page .page-container {
+  max-width: none;
+  width: 100%;
+}
+.model-page .contractors {
+  background-image: url(../../images/concept-art/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 50px;
+}
+.model-page .contractors-content {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 70px;
+       column-gap: 70px;
+  row-gap: 10px;
+  justify-content: center;
+}
+.model-page .contractors-content .contractor {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(33.333% - 70px);
+  max-width: 400px;
+}
+.model-page .contractors-content .contractor .image {
+  width: 160px;
+  height: auto;
+}
+.model-page .contractors-content .contractor .image img {
+  width: 100%;
+  height: 100%;
+}
+.model-page .contractors-content .contractor .name {
+  text-transform: uppercase;
+  color: #ff8196;
+  font-size: 20px;
+  font-weight: 900;
+}
+.model-page .contractors-content .contractor .roles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.model-page .contractors-content .contractor .roles .role {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #377493;
+}
+.model-page .contractors-cards {
+  margin-top: 100px;
+}
+.model-page .contractors-cards .contractor-card {
+  position: relative;
+  margin-bottom: 100px;
+}
+.model-page .contractors-cards .contractor-card .card-header {
+  position: relative;
+}
+.model-page .contractors-cards .contractor-card .card-header .line {
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  border-top: 1px dashed #92beea;
+}
+.model-page .contractors-cards .contractor-card .card-header-contractor {
+  max-width: 1400px;
+  z-index: 2;
+  position: relative;
+  top: -20px;
+  left: 300px;
+  display: inline-flex;
+  align-items: center;
+}
+.model-page .contractors-cards .contractor-card .card-header-contractor .image {
+  width: 120px;
+  height: auto;
+}
+.model-page .contractors-cards .contractor-card .card-header-contractor .image img {
+  width: 100%;
+  height: 100%;
+}
+.model-page .contractors-cards .contractor-card .card-header-contractor .name {
+  color: #92beea;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 900;
+}
+.model-page .contractors-cards .contractor-card .card-header-contractor .roles {
+  font-weight: 300;
+  color: #443252;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.model-page .contractors-cards .contractor-card .card-header-contractor .status {
+  width: 200px;
+  height: 25px;
+}
+.model-page .contractors-cards .contractor-card .card-main {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 460px;
+  background: #f4f7ff;
+}
+.model-page .contractors-cards .contractor-card .card-main .left-flower {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.model-page .contractors-cards .contractor-card .card-main .left-flower img {
+  width: 100%;
+  height: 100%;
+}
+.model-page .contractors-cards .contractor-card .card-main .included {
+  z-index: 2;
+  position: relative;
+  margin-left: 170px;
+  margin-bottom: 50px;
+}
+.model-page .contractors-cards .contractor-card .card-main .included .title {
+  color: #443252;
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.model-page .contractors-cards .contractor-card .card-main .included .text {
+  color: #92beea;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.model-page .contractors-cards .contractor-card .card-main .services {
+  z-index: 2;
+  position: relative;
+  margin-left: 100px;
+  width: 900px;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.model-page .contractors-cards .contractor-card .card-main .services .divider {
+  text-align: center;
+  color: #443252;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 300;
+}
+.model-page .contractors-cards .contractor-card .card-main .services .base, .model-page .contractors-cards .contractor-card .card-main .services .extra {
+  display: flex;
+  justify-content: space-between;
+}
+.model-page .contractors-cards .contractor-card .card-main .services .service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+}
+.model-page .contractors-cards .contractor-card .card-main .services .service .name {
+  color: #92beea;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.model-page .contractors-cards .contractor-card .card-main .services .service .expressions {
+  color: #443252;
+}
+.model-page .contractors-cards .contractor-card .card-main .services .service .amount {
+  text-transform: uppercase;
+  padding: 5px 15px;
+  color: #443252;
+  font-weight: 300;
+  font-size: 20px;
+  background: white;
+  border-radius: 30px;
+  border: 1px dashed #92beea;
+}
+.model-page .contractors-cards .contractor-card .card-footer {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.model-page .contractors-cards .contractor-card .card-footer .services-desc {
+  margin-left: 170px;
+  align-self: flex-start;
+}
+.model-page .contractors-cards .contractor-card .card-footer .services-desc .edit-info {
+  color: #92beea;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.model-page .contractors-cards .contractor-card .card-footer .services-desc .edit-info .amount {
+  color: rgb(68, 50, 82);
+  font-weight: inherit;
+  text-transform: inherit;
+}
+.model-page .contractors-cards .contractor-card .card-footer .services-desc .additional {
+  color: #92beea;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.model-page .contractors-cards .contractor-card .card-footer .request-button {
+  margin-top: 30px;
+  color: #92beea;
+  border-radius: 30px;
+  border: 1px dashed #92beea;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 24px;
+  padding: 10px 30px;
+}
+.model-page .contractors-cards .contractor-card .card-slider {
+  width: 320px;
+  height: 720px;
+  z-index: 999;
+  position: absolute;
+  right: 170px;
+  top: 0px;
+}
+.model-page .contractors-cards .contractor-card .card-slider .splide__arrow--prev {
+  left: -2em;
+}
+.model-page .contractors-cards .contractor-card .card-slider .splide__arrow--next {
+  right: -2em;
+}
+.model-page .contractors-cards .contractor-card .card-slider .splide__slide img {
+  width: 100%;
+  height: 100%;
+}
+.model-page .contractors-cards .contractor-card .discount {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 999;
+  position: absolute;
+  top: 50%;
+  right: 30%;
+  transform: translateY(-50%);
+}
+.model-page .contractors-cards .contractor-card .discount .percent {
+  display: inline;
+  position: relative;
+}
+.model-page .contractors-cards .contractor-card .discount .percent .amount {
+  display: inline;
+  z-index: 1;
+  position: relative;
+  color: #92beea;
+  font-size: 50px;
+  font-weight: 900;
+}
+.model-page .contractors-cards .contractor-card .discount .percent .symbol {
+  z-index: 2;
+  position: absolute;
+  bottom: -14px;
+  right: -29px;
+  color: #443252;
+  font-size: 40px;
+  font-weight: 900;
+}
+.model-page .contractors-cards .contractor-card .discount .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.model-page .contractors-cards .contractor-card .discount .text-1 {
+  text-transform: uppercase;
+  color: #443252;
+  font-size: 20px;
+  font-weight: 400;
+}
+.model-page .contractors-cards .contractor-card .discount .text-2 {
+  text-transform: uppercase;
+  color: #92beea;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: italic;
+}
+.model-page .contractors-cards .contractor-card .card-icons {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.model-page .contractors-cards .contractor-card .card-icons .icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  border: 2px dashed #92beea;
+}
+.model-page .contractors-cards .contractor-card .card-icons .icon .image {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background-image: url(../../images/concept-art/1.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.emotes-page .page-container {
+  max-width: none;
+  width: 100%;
+}
+.emotes-page .contractors {
+  background-image: url(../../images/concept-art/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 50px;
+}
+.emotes-page .contractors-content {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 70px;
+       column-gap: 70px;
+  row-gap: 10px;
+  justify-content: center;
+}
+.emotes-page .contractors-content .contractor {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(33.333% - 70px);
+  max-width: 400px;
+}
+.emotes-page .contractors-content .contractor .image {
+  width: 160px;
+  height: auto;
+}
+.emotes-page .contractors-content .contractor .image img {
+  width: 100%;
+  height: 100%;
+}
+.emotes-page .contractors-content .contractor .name {
+  text-transform: uppercase;
+  color: #ff8196;
+  font-size: 20px;
+  font-weight: 900;
+}
+.emotes-page .contractors-content .contractor .roles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.emotes-page .contractors-content .contractor .roles .role {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #377493;
+}
+.emotes-page .contractors-cards {
+  margin-top: 100px;
+}
+.emotes-page .contractors-cards .contractor-card {
+  position: relative;
+  margin-bottom: 100px;
+}
+.emotes-page .contractors-cards .contractor-card .card-header {
+  position: relative;
+}
+.emotes-page .contractors-cards .contractor-card .card-header .line {
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  border-top: 1px dashed #92beea;
+}
+.emotes-page .contractors-cards .contractor-card .card-header-contractor {
+  max-width: 1400px;
+  z-index: 2;
+  position: relative;
+  top: -20px;
+  left: 300px;
+  display: inline-flex;
+  align-items: center;
+}
+.emotes-page .contractors-cards .contractor-card .card-header-contractor .image {
+  width: 120px;
+  height: auto;
+}
+.emotes-page .contractors-cards .contractor-card .card-header-contractor .image img {
+  width: 100%;
+  height: 100%;
+}
+.emotes-page .contractors-cards .contractor-card .card-header-contractor .name {
+  color: #92beea;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 900;
+}
+.emotes-page .contractors-cards .contractor-card .card-header-contractor .roles {
+  font-weight: 300;
+  color: #443252;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.emotes-page .contractors-cards .contractor-card .card-header-contractor .status {
+  width: 200px;
+  height: 25px;
+}
+.emotes-page .contractors-cards .contractor-card .card-main {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 460px;
+  background: #f4f7ff;
+}
+.emotes-page .contractors-cards .contractor-card .card-main .left-flower {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.emotes-page .contractors-cards .contractor-card .card-main .left-flower img {
+  width: 100%;
+  height: 100%;
+}
+.emotes-page .contractors-cards .contractor-card .card-main .included {
+  z-index: 2;
+  position: relative;
+  margin-bottom: 50px;
+}
+.emotes-page .contractors-cards .contractor-card .card-main .included .title {
+  text-align: center;
+  color: #443252;
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.emotes-page .contractors-cards .contractor-card .card-main .included .text {
+  color: #92beea;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.emotes-page .contractors-cards .contractor-card .card-main .services {
+  z-index: 2;
+  position: relative;
+  width: 900px;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.emotes-page .contractors-cards .contractor-card .card-main .services .divider {
+  text-align: center;
+  color: #443252;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 300;
+}
+.emotes-page .contractors-cards .contractor-card .card-main .services .base, .emotes-page .contractors-cards .contractor-card .card-main .services .extra {
+  display: flex;
+  justify-content: space-between;
+}
+.emotes-page .contractors-cards .contractor-card .card-main .services .service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+.emotes-page .contractors-cards .contractor-card .card-main .services .service .name {
+  text-align: center;
+  color: #92beea;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.emotes-page .contractors-cards .contractor-card .card-main .services .service .expressions {
+  color: #443252;
+}
+.emotes-page .contractors-cards .contractor-card .card-main .services .service .amount {
+  text-transform: uppercase;
+  padding: 5px 15px;
+  color: #443252;
+  font-weight: 300;
+  font-size: 20px;
+  background: white;
+  border-radius: 30px;
+  border: 1px dashed #92beea;
+}
+.emotes-page .contractors-cards .contractor-card .card-footer {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.emotes-page .contractors-cards .contractor-card .card-footer .services-desc {
+  margin-left: 170px;
+  align-self: flex-start;
+}
+.emotes-page .contractors-cards .contractor-card .card-footer .services-desc .edit-info {
+  color: #92beea;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.emotes-page .contractors-cards .contractor-card .card-footer .services-desc .edit-info .amount {
+  color: rgb(68, 50, 82);
+  font-weight: inherit;
+  text-transform: inherit;
+}
+.emotes-page .contractors-cards .contractor-card .card-footer .services-desc .additional {
+  color: #92beea;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.emotes-page .contractors-cards .contractor-card .card-footer .services-desc .additional .bold {
+  color: #92beea;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.emotes-page .contractors-cards .contractor-card .card-footer .request-button {
+  margin-top: 30px;
+  color: #92beea;
+  border-radius: 30px;
+  border: 1px dashed #92beea;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 24px;
+  padding: 10px 30px;
+}
+.emotes-page .contractors-cards .contractor-card .discount {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 999;
+  position: absolute;
+  bottom: 85px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.emotes-page .contractors-cards .contractor-card .discount .percent {
+  display: inline;
+  position: relative;
+}
+.emotes-page .contractors-cards .contractor-card .discount .percent .amount {
+  display: inline;
+  z-index: 1;
+  position: relative;
+  color: #92beea;
+  font-size: 50px;
+  font-weight: 900;
+}
+.emotes-page .contractors-cards .contractor-card .discount .percent .symbol {
+  z-index: 2;
+  position: absolute;
+  bottom: -14px;
+  right: -29px;
+  color: #443252;
+  font-size: 40px;
+  font-weight: 900;
+}
+.emotes-page .contractors-cards .contractor-card .discount .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.emotes-page .contractors-cards .contractor-card .discount .text-1 {
+  text-transform: uppercase;
+  color: #443252;
+  font-size: 20px;
+  font-weight: 400;
+}
+.emotes-page .contractors-cards .contractor-card .discount .text-2 {
+  text-transform: uppercase;
+  color: #92beea;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: italic;
+}
+.emotes-page .contractors-cards .contractor-card .examples-left {
+  left: 5%;
+}
+.emotes-page .contractors-cards .contractor-card .examples-right {
+  right: 5%;
+}
+.emotes-page .contractors-cards .contractor-card .examples {
+  z-index: 999;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: grid;
+  grid-template-columns: repeat(3, 96px);
+  gap: 20px;
+}
+.emotes-page .contractors-cards .contractor-card .examples .example {
+  width: 96px;
+  height: 96px;
+}
+.emotes-page .contractors-cards .contractor-card .examples .example img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1440px) {
+  .emotes-page .services-desc {
+    margin-left: 75px !important;
+  }
+  .emotes-page .service .name {
+    font-size: 20px !important;
+  }
+  .emotes-page .service .amount {
+    font-size: 18px !important;
+  }
+  .emotes-page .example {
+    width: 80px !important;
+    height: 80px !important;
+  }
+  .emotes-page .edit-info, .emotes-page .additional {
+    font-size: 14px !important;
+  }
+  .emotes-page .text-1, .emotes-page .text-2 {
+    font-size: 18px !important;
+  }
+}
+.rigging-page .page-container {
+  max-width: none;
+  width: 100%;
+}
+.rigging-page .contractors {
+  background-image: url(../../images/concept-art/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 50px;
+}
+.rigging-page .contractors-content {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 70px;
+       column-gap: 70px;
+  row-gap: 10px;
+  justify-content: center;
+}
+.rigging-page .contractors-content .contractor {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(33.333% - 70px);
+  max-width: 400px;
+}
+.rigging-page .contractors-content .contractor .image {
+  width: 160px;
+  height: auto;
+}
+.rigging-page .contractors-content .contractor .image img {
+  width: 100%;
+  height: 100%;
+}
+.rigging-page .contractors-content .contractor .name {
+  text-transform: uppercase;
+  color: #ff8196;
+  font-size: 20px;
+  font-weight: 900;
+}
+.rigging-page .contractors-content .contractor .roles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rigging-page .contractors-content .contractor .roles .role {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #377493;
+}
+.rigging-page .contractors-cards {
+  margin-top: 100px;
+}
+.rigging-page .contractors-cards .contractor-card {
+  position: relative;
+  margin-bottom: 100px;
+}
+.rigging-page .contractors-cards .contractor-card .card-header {
+  position: relative;
+}
+.rigging-page .contractors-cards .contractor-card .card-header .line {
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  border-top: 1px dashed #92beea;
+}
+.rigging-page .contractors-cards .contractor-card .card-header-contractor {
+  max-width: 1400px;
+  z-index: 2;
+  position: relative;
+  top: -20px;
+  left: 300px;
+  display: inline-flex;
+  align-items: center;
+}
+.rigging-page .contractors-cards .contractor-card .card-header-contractor .image {
+  width: 120px;
+  height: auto;
+}
+.rigging-page .contractors-cards .contractor-card .card-header-contractor .image img {
+  width: 100%;
+  height: 100%;
+}
+.rigging-page .contractors-cards .contractor-card .card-header-contractor .name {
+  color: #92beea;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 900;
+}
+.rigging-page .contractors-cards .contractor-card .card-header-contractor .roles {
+  font-weight: 300;
+  color: #443252;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.rigging-page .contractors-cards .contractor-card .card-header-contractor .status {
+  width: 200px;
+  height: 25px;
+}
+.rigging-page .contractors-cards .contractor-card .card-main {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 460px;
+  background: #f4f7ff;
+}
+.rigging-page .contractors-cards .contractor-card .card-main .left-flower {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.rigging-page .contractors-cards .contractor-card .card-main .left-flower img {
+  width: 100%;
+  height: 100%;
+}
+.rigging-page .contractors-cards .contractor-card .card-main .included {
+  z-index: 2;
+  position: relative;
+  margin-bottom: 50px;
+}
+.rigging-page .contractors-cards .contractor-card .card-main .included .title {
+  text-align: center;
+  color: #443252;
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.rigging-page .contractors-cards .contractor-card .card-main .included .text {
+  color: #92beea;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.rigging-page .contractors-cards .contractor-card .card-main .services {
+  z-index: 2;
+  position: relative;
+  width: 900px;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.rigging-page .contractors-cards .contractor-card .card-main .services .divider {
+  text-align: center;
+  color: #443252;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 300;
+}
+.rigging-page .contractors-cards .contractor-card .card-main .services .base, .rigging-page .contractors-cards .contractor-card .card-main .services .extra {
+  display: flex;
+  justify-content: space-between;
+}
+.rigging-page .contractors-cards .contractor-card .card-main .services .service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+.rigging-page .contractors-cards .contractor-card .card-main .services .service .name {
+  text-align: center;
+  color: #92beea;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.rigging-page .contractors-cards .contractor-card .card-main .services .service .expressions {
+  color: #443252;
+}
+.rigging-page .contractors-cards .contractor-card .card-main .services .service .amount {
+  text-transform: uppercase;
+  padding: 5px 15px;
+  color: #443252;
+  font-weight: 300;
+  font-size: 20px;
+  background: white;
+  border-radius: 30px;
+  border: 1px dashed #92beea;
+}
+.rigging-page .contractors-cards .contractor-card .card-footer {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rigging-page .contractors-cards .contractor-card .card-footer .services-desc {
+  margin-left: 170px;
+  align-self: flex-start;
+}
+.rigging-page .contractors-cards .contractor-card .card-footer .services-desc .edit-info {
+  color: #92beea;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.rigging-page .contractors-cards .contractor-card .card-footer .services-desc .edit-info .amount {
+  color: rgb(68, 50, 82);
+  font-weight: inherit;
+  text-transform: inherit;
+}
+.rigging-page .contractors-cards .contractor-card .card-footer .services-desc .additional {
+  color: #92beea;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.rigging-page .contractors-cards .contractor-card .card-footer .services-desc .additional .bold {
+  color: #92beea;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.rigging-page .contractors-cards .contractor-card .card-footer .request-button {
+  margin-top: 30px;
+  color: #92beea;
+  border-radius: 30px;
+  border: 1px dashed #92beea;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 24px;
+  padding: 10px 30px;
+}
+.rigging-page .contractors-cards .contractor-card .left-column {
+  z-index: 999;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rigging-page .contractors-cards .contractor-card .left-column .desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rigging-page .contractors-cards .contractor-card .left-column .desc .edit-info {
+  color: #92beea;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.rigging-page .contractors-cards .contractor-card .left-column .desc .edit-info .amount {
+  color: rgb(68, 50, 82);
+  font-weight: inherit;
+  text-transform: inherit;
+}
+.rigging-page .contractors-cards .contractor-card .left-column .desc .additional {
+  margin-top: 30px;
+  text-align: center;
+  max-width: 350px;
+  color: #92beea;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.rigging-page .contractors-cards .contractor-card .left-column .desc .additional .bold {
+  color: #92beea;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.rigging-page .contractors-cards .contractor-card .left-column .request-button {
+  margin-top: 30px;
+  color: #92beea;
+  border-radius: 30px;
+  border: 1px dashed #92beea;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 24px;
+  padding: 10px 30px;
+}
+.rigging-page .contractors-cards .contractor-card .discount {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 999;
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
+}
+.rigging-page .contractors-cards .contractor-card .discount .percent {
+  display: inline;
+  position: relative;
+}
+.rigging-page .contractors-cards .contractor-card .discount .percent .amount {
+  display: inline;
+  z-index: 1;
+  position: relative;
+  color: #92beea;
+  font-size: 50px;
+  font-weight: 900;
+}
+.rigging-page .contractors-cards .contractor-card .discount .percent .symbol {
+  z-index: 2;
+  position: absolute;
+  bottom: -14px;
+  right: -29px;
+  color: #443252;
+  font-size: 40px;
+  font-weight: 900;
+}
+.rigging-page .contractors-cards .contractor-card .discount .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rigging-page .contractors-cards .contractor-card .discount .text-1 {
+  text-transform: uppercase;
+  color: #443252;
+  font-size: 20px;
+  font-weight: 400;
+}
+.rigging-page .contractors-cards .contractor-card .discount .text-2 {
+  text-transform: uppercase;
+  color: #92beea;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Блокируем скролл body при открытой модалке */
+body.modal-open {
+  overflow: hidden;
+}
+
+/* Затемнённый фон */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  z-index: 1000;
+  /* Модальное окно */
+  /* Кнопка закрытия */
+  /* Контент */
+}
+.modal-overlay .modal {
+  padding: 20px 60px;
+  background: #fff;
+  width: 90%;
+  height: 90%;
+  border-radius: 12px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.modal-overlay .modal-close {
+  position: absolute;
+  top: 10px;
+  right: 24px;
+  border: none;
+  background: none;
+  font-size: 40px;
+  cursor: pointer;
+}
+.modal-overlay .title {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 900;
+}
+.modal-overlay .desc {
+  text-align: center;
+}
+.modal-overlay .modal-content {
+  overflow-y: auto;
+  /* Один видео-блок */
+  /* Адаптивное видео 16:9 */
+  /* Подпись под видео */
+}
+.modal-overlay .modal-content .videos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
+.modal-overlay .modal-content .video-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.modal-overlay .modal-content .video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #000;
+}
+.modal-overlay .modal-content .video-wrapper iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.modal-overlay .modal-content .video-title {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* Активное состояние */
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.room-page .page-container {
+  max-width: none;
+  width: 100%;
+}
+.room-page .contractors {
+  background-image: url(../../images/concept-art/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 50px;
+}
+.room-page .contractors-content {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 70px;
+       column-gap: 70px;
+  row-gap: 10px;
+  justify-content: center;
+}
+.room-page .contractors-content .contractor {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(33.333% - 70px);
+  max-width: 400px;
+}
+.room-page .contractors-content .contractor .image {
+  width: 160px;
+  height: auto;
+}
+.room-page .contractors-content .contractor .image img {
+  width: 100%;
+  height: 100%;
+}
+.room-page .contractors-content .contractor .name {
+  text-transform: uppercase;
+  color: #ff8196;
+  font-size: 20px;
+  font-weight: 900;
+}
+.room-page .contractors-content .contractor .roles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.room-page .contractors-content .contractor .roles .role {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #377493;
+}
+.room-page .contractors-cards {
+  margin-top: 100px;
+}
+.room-page .contractors-cards .contractor-card {
+  position: relative;
+  margin-bottom: 100px;
+}
+.room-page .contractors-cards .contractor-card .card-header {
+  position: relative;
+}
+.room-page .contractors-cards .contractor-card .card-header .line {
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  border-top: 1px dashed #92beea;
+}
+.room-page .contractors-cards .contractor-card .card-header-contractor {
+  max-width: 1400px;
+  z-index: 2;
+  position: relative;
+  top: -20px;
+  left: 300px;
+  display: inline-flex;
+  align-items: center;
+}
+.room-page .contractors-cards .contractor-card .card-header-contractor .image {
+  width: 120px;
+  height: auto;
+}
+.room-page .contractors-cards .contractor-card .card-header-contractor .image img {
+  width: 100%;
+  height: 100%;
+}
+.room-page .contractors-cards .contractor-card .card-header-contractor .name {
+  color: #92beea;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 900;
+}
+.room-page .contractors-cards .contractor-card .card-header-contractor .roles {
+  font-weight: 300;
+  color: #443252;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.room-page .contractors-cards .contractor-card .card-header-contractor .status {
+  width: 200px;
+  height: 25px;
+}
+.room-page .contractors-cards .contractor-card .card-main {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 460px;
+  background: #f4f7ff;
+}
+.room-page .contractors-cards .contractor-card .card-main .left-flower {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.room-page .contractors-cards .contractor-card .card-main .left-flower img {
+  width: 100%;
+  height: 100%;
+}
+.room-page .contractors-cards .contractor-card .card-main .services {
+  z-index: 2;
+  position: relative;
+  width: 900px;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.room-page .contractors-cards .contractor-card .card-main .services .divider {
+  text-align: center;
+  color: #443252;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 300;
+}
+.room-page .contractors-cards .contractor-card .card-main .services .base, .room-page .contractors-cards .contractor-card .card-main .services .extra {
+  display: flex;
+  justify-content: center;
+}
+.room-page .contractors-cards .contractor-card .card-main .services .service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+.room-page .contractors-cards .contractor-card .card-main .services .service .name {
+  text-transform: uppercase;
+  text-align: center;
+  color: #92beea;
+  font-size: 26px;
+  font-weight: 700;
+}
+.room-page .contractors-cards .contractor-card .card-main .services .service .expressions {
+  text-transform: uppercase;
+  color: #443252;
+  margin-bottom: 10px;
+}
+.room-page .contractors-cards .contractor-card .card-main .services .service .amount {
+  text-transform: uppercase;
+  padding: 5px 15px;
+  color: #443252;
+  font-weight: 300;
+  font-size: 20px;
+  background: white;
+  border-radius: 30px;
+  border: 1px dashed #92beea;
+}
+.room-page .contractors-cards .contractor-card .card-footer {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.room-page .contractors-cards .contractor-card .card-footer .services-desc {
+  margin-left: 170px;
+  align-self: flex-start;
+}
+.room-page .contractors-cards .contractor-card .card-footer .services-desc .edit-info {
+  color: #92beea;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.room-page .contractors-cards .contractor-card .card-footer .services-desc .edit-info .amount {
+  color: rgb(68, 50, 82);
+  font-weight: inherit;
+  text-transform: inherit;
+}
+.room-page .contractors-cards .contractor-card .card-footer .services-desc .additional {
+  color: #92beea;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.room-page .contractors-cards .contractor-card .card-footer .services-desc .additional .bold {
+  color: #92beea;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.room-page .contractors-cards .contractor-card .card-footer .request-button {
+  margin-top: 30px;
+  color: #92beea;
+  border-radius: 30px;
+  border: 1px dashed #92beea;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 24px;
+  padding: 10px 30px;
+}
+.room-page .contractors-cards .contractor-card .discount {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 999;
+  position: absolute;
+  bottom: 195px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.room-page .contractors-cards .contractor-card .discount .percent {
+  display: inline;
+  position: relative;
+}
+.room-page .contractors-cards .contractor-card .discount .percent .amount {
+  display: inline;
+  z-index: 1;
+  position: relative;
+  color: #92beea;
+  font-size: 50px;
+  font-weight: 900;
+}
+.room-page .contractors-cards .contractor-card .discount .percent .symbol {
+  z-index: 2;
+  position: absolute;
+  bottom: -14px;
+  right: -29px;
+  color: #443252;
+  font-size: 40px;
+  font-weight: 900;
+}
+.room-page .contractors-cards .contractor-card .discount .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.room-page .contractors-cards .contractor-card .discount .text-1 {
+  text-transform: uppercase;
+  color: #443252;
+  font-size: 20px;
+  font-weight: 400;
+}
+.room-page .contractors-cards .contractor-card .discount .text-2 {
+  text-transform: uppercase;
+  color: #92beea;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.overlays-page .page-container {
+  max-width: none;
+  width: 100%;
+}
+.overlays-page .contractors {
+  background-image: url(../../images/concept-art/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 50px;
+}
+.overlays-page .contractors-content {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 70px;
+       column-gap: 70px;
+  row-gap: 10px;
+  justify-content: center;
+}
+.overlays-page .contractors-content .contractor {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(33.333% - 70px);
+  max-width: 400px;
+}
+.overlays-page .contractors-content .contractor .image {
+  width: 160px;
+  height: auto;
+}
+.overlays-page .contractors-content .contractor .image img {
+  width: 100%;
+  height: 100%;
+}
+.overlays-page .contractors-content .contractor .name {
+  text-transform: uppercase;
+  color: #ff8196;
+  font-size: 20px;
+  font-weight: 900;
+}
+.overlays-page .contractors-content .contractor .roles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.overlays-page .contractors-content .contractor .roles .role {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #377493;
+}
+.overlays-page .contractors-cards {
+  margin-top: 100px;
+}
+.overlays-page .contractors-cards .contractor-card {
+  position: relative;
+  margin-bottom: 100px;
+}
+.overlays-page .contractors-cards .contractor-card .card-header {
+  position: relative;
+}
+.overlays-page .contractors-cards .contractor-card .card-header .line {
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  border-top: 1px dashed #92beea;
+}
+.overlays-page .contractors-cards .contractor-card .card-header-contractor {
+  max-width: 1400px;
+  z-index: 2;
+  position: relative;
+  top: -20px;
+  left: 300px;
+  display: inline-flex;
+  align-items: center;
+}
+.overlays-page .contractors-cards .contractor-card .card-header-contractor .image {
+  width: 120px;
+  height: auto;
+}
+.overlays-page .contractors-cards .contractor-card .card-header-contractor .image img {
+  width: 100%;
+  height: 100%;
+}
+.overlays-page .contractors-cards .contractor-card .card-header-contractor .name {
+  color: #92beea;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 900;
+}
+.overlays-page .contractors-cards .contractor-card .card-header-contractor .roles {
+  font-weight: 300;
+  color: #443252;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.overlays-page .contractors-cards .contractor-card .card-header-contractor .status {
+  width: 200px;
+  height: 25px;
+}
+.overlays-page .contractors-cards .contractor-card .card-main {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 30px 0px;
+  background: #f4f7ff;
+}
+.overlays-page .contractors-cards .contractor-card .card-main .left-flower {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.overlays-page .contractors-cards .contractor-card .card-main .left-flower img {
+  width: 100%;
+  height: 100%;
+}
+.overlays-page .contractors-cards .contractor-card .card-main .included {
+  z-index: 2;
+  position: relative;
+  margin-bottom: 50px;
+}
+.overlays-page .contractors-cards .contractor-card .card-main .included .title {
+  text-align: center;
+  color: #443252;
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.overlays-page .contractors-cards .contractor-card .card-main .included .text {
+  color: #92beea;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.overlays-page .contractors-cards .contractor-card .card-main .services {
+  z-index: 2;
+  position: relative;
+  width: 80%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.overlays-page .contractors-cards .contractor-card .card-main .services .divider {
+  text-align: center;
+  color: #443252;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 300;
+}
+.overlays-page .contractors-cards .contractor-card .card-main .services .base, .overlays-page .contractors-cards .contractor-card .card-main .services .extra {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+}
+.overlays-page .contractors-cards .contractor-card .card-main .services .service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.overlays-page .contractors-cards .contractor-card .card-main .services .service .name {
+  text-align: center;
+  color: #92beea;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.overlays-page .contractors-cards .contractor-card .card-main .services .service .expressions {
+  color: #443252;
+}
+.overlays-page .contractors-cards .contractor-card .card-main .services .service .amount {
+  text-transform: uppercase;
+  padding: 5px 15px;
+  color: #443252;
+  font-weight: 300;
+  font-size: 20px;
+  background: white;
+  border-radius: 30px;
+  border: 1px dashed #92beea;
+}
+.overlays-page .contractors-cards .contractor-card .card-footer {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.overlays-page .contractors-cards .contractor-card .card-footer .services-desc {
+  margin-left: 170px;
+  align-self: flex-start;
+}
+.overlays-page .contractors-cards .contractor-card .card-footer .services-desc .edit-info {
+  color: #92beea;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.overlays-page .contractors-cards .contractor-card .card-footer .services-desc .edit-info .amount {
+  color: rgb(68, 50, 82);
+  font-weight: inherit;
+  text-transform: inherit;
+}
+.overlays-page .contractors-cards .contractor-card .card-footer .services-desc .additional {
+  color: #92beea;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.overlays-page .contractors-cards .contractor-card .card-footer .services-desc .additional .bold {
+  color: #92beea;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.overlays-page .contractors-cards .contractor-card .card-footer .request-button {
+  margin-top: 30px;
+  color: #92beea;
+  border-radius: 30px;
+  border: 1px dashed #92beea;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 24px;
+  padding: 10px 30px;
+}
+.overlays-page .contractors-cards .contractor-card .discount {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 999;
+  position: absolute;
+  bottom: 85px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.overlays-page .contractors-cards .contractor-card .discount .percent {
+  display: inline;
+  position: relative;
+}
+.overlays-page .contractors-cards .contractor-card .discount .percent .amount {
+  display: inline;
+  z-index: 1;
+  position: relative;
+  color: #92beea;
+  font-size: 50px;
+  font-weight: 900;
+}
+.overlays-page .contractors-cards .contractor-card .discount .percent .symbol {
+  z-index: 2;
+  position: absolute;
+  bottom: -14px;
+  right: -29px;
+  color: #443252;
+  font-size: 40px;
+  font-weight: 900;
+}
+.overlays-page .contractors-cards .contractor-card .discount .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.overlays-page .contractors-cards .contractor-card .discount .text-1 {
+  text-transform: uppercase;
+  color: #443252;
+  font-size: 20px;
+  font-weight: 400;
+}
+.overlays-page .contractors-cards .contractor-card .discount .text-2 {
+  text-transform: uppercase;
+  color: #92beea;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: italic;
+}
+.overlays-page .contractors-cards .contractor-card .examples-left {
+  left: 5%;
+}
+.overlays-page .contractors-cards .contractor-card .examples-right {
+  right: 5%;
+}
+.overlays-page .contractors-cards .contractor-card .examples {
+  z-index: 999;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: grid;
+  grid-template-columns: repeat(3, 96px);
+  gap: 20px;
+}
+.overlays-page .contractors-cards .contractor-card .examples .example {
+  width: 96px;
+  height: 96px;
+}
+.overlays-page .contractors-cards .contractor-card .examples .example img {
+  width: 100%;
+  height: 100%;
+}
+
+.reviews-page {
+  background-image: url(../../images/heading-bg.png);
+  background-size: contain;
+  background-repeat: repeat-y;
+  width: 100%;
+  height: 100%;
+  margin-top: 0px;
+}
+.reviews-page .page-container {
+  padding: 40px 0px;
+  width: 100%;
+}
+.reviews-page .reviews-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.reviews-page .reviews-header .title {
+  font-size: 60px;
+  font-weight: 600;
+  font-family: "Ms Madi", cursive;
+  letter-spacing: 6px;
+}
+.reviews-page .reviews-header .review-button {
+  padding: 10px 100px;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  background-color: #86c46e;
+  border: 1px solid #86c46e;
+  border-radius: 50px;
+  text-transform: uppercase;
+  transition: 0.2s ease-in all;
+  box-shadow: 0px 4px 9px 2px rgba(0, 0, 0, 0.45);
+}
+.reviews-page .page-main {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 100px;
+       column-gap: 100px;
+  row-gap: 25px;
+}
+@media (max-width: 1024px) {
+  .reviews-page .page-main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .reviews-page .page-main {
+    grid-template-columns: 1fr;
+  }
+}
+.reviews-page .page-main .review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+}
+.reviews-page .page-main .image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.reviews-page .page-main .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center top;
+     object-position: center top;
+}
+.reviews-page .page-main .nickname {
+  color: #477C90;
+  font-weight: bold;
+  font-size: 24px;
+}
+.reviews-page .page-main .text {
+  padding: 16px 20px;
+  border-radius: 25px;
+  background: linear-gradient(to bottom, #5FA197, #3C6B8C);
+  color: #FFFFFF;
+  line-height: 1.5;
+  text-align: left;
+}
+@media (max-width: 1440px) {
+  .reviews-page .page-container {
+    padding: 40px 100px;
+  }
+}/*# sourceMappingURL=styles.css.map */

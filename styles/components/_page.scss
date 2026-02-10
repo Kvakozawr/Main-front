@@ -1,0 +1,42 @@
+.page{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    &-header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &-container{
+        z-index: 2;
+        position: relative;
+        max-width: 1400px;
+    }
+}
+
+
+.page-header{
+    .title{
+        text-transform: uppercase;
+        font-size: 40px;
+        font-weight: 900;
+        color: #86c46e;
+        text-align: center;
+    }
+
+    .title-desc{
+        position: relative;
+        top: -20px;
+        width: 600px;
+        height: auto;
+    }
+
+    .title-desc img{
+        width: 100%;
+        height: 100%;
+    }
+}
