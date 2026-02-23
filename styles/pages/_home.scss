@@ -8,24 +8,26 @@
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
-        padding: 180px 0px 315px 0px;
+        height: 1000px;
 
         &-video{
-            position: relative;
-            top: 0px;
-            left: 0px;
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translateX(-50%);
             z-index: 2;
             width: 700px;
-            height: auto;
         }
 
         &-video video{
+            object-fit: cover;
             width: 100%;
             height: 100%;
         }
 
         &-title{
-            position: relative;
+            position: absolute;
+            top: 50%;
         }
 
         &-title__text{
@@ -39,14 +41,6 @@
             position: absolute;
             bottom: -100px;
             left: 0px;
-        }
-
-        @media (max-width: 1440px) {
-            
-        }
-
-        @media (max-width: 1024px){
-            
         }
     }
 
@@ -67,9 +61,20 @@
             background-size: cover;
         }
 
+        @media (max-width: 425px){
+            .title{
+                font-size: 16px;
+            }
+            margin-top: 50px;
+        }
+
         .title-desc-about{
             top: -40px;
             width: 400px;
+            @media (max-width: 425px){
+                top: -17px;
+                width: 200px;
+            }
         }
 
         .about-main{
@@ -79,6 +84,11 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
+
+            @media (max-width: 425px){
+                height: 250px;
+                margin-top: 0px;
+            }
 
             .sticker{
                 width: 30%;
@@ -90,10 +100,19 @@
 
             .content{
                 width: 50%;
+                @media (max-width: 425px){
+                    width: 60%;
+                }
                 &__title{
                     font-size: 20px;
                     color: #98ba66;
                     margin: 0;
+                    @media (max-width: 768px) {
+                        font-size: 16px;
+                    }
+                    @media (max-width: 425px){
+                        font-size: 8px;
+                    }
                 }
 
                 &__desc{
@@ -101,6 +120,13 @@
                     font-size: 40px;
                     font-weight: 900;
                     margin: 0px 0px 25px 0px;
+
+                    @media (max-width: 768px) {
+                        font-size: 24px;
+                    }
+                    @media (max-width: 425px){
+                        font-size: 10px;
+                    }
                 }
 
                 .meet-the-team{
@@ -111,9 +137,20 @@
                         color: #377493;
                         font-size: 22px;
                         margin: 0;
+                        @media (max-width: 768px) {
+                            font-size: 14px;
+                        }
+                        @media (max-width: 425px){
+                            font-size: 8px;
+                        }
                     }
                     .text:nth-child(2){
                         margin: 25px 0px;
+                    }
+                    @media (max-width: 425px){
+                        .text:nth-child(2){
+                            margin: 5px 0px;
+                        }
                     }
                 }
             }
@@ -122,6 +159,12 @@
 
     .star-page{
         margin-top: 250px;
+        @media (max-width: 768px) {
+            margin-top: 200px;
+        }
+        @media (max-width: 425px) {
+            margin-top: 0px;
+        }
 
         .star-container{
             max-width: none;
@@ -132,6 +175,16 @@
             .title-desc{
                 top: -40px;
                 width: 500px;
+            }
+
+            @media (max-width: 425px) {
+                .title{
+                    font-size: 16px;
+                }
+                .title-desc{
+                    top: -20px;
+                    width: 200px;
+                }
             }
         }
 
@@ -151,6 +204,22 @@
 
             .star-works {
                 display: flex;
+
+                .splide{
+                    width: 100%;
+                    height: 100%;
+
+                    .splide__slide{
+                        height: 992px;
+                        width: 100%;
+                        @media (max-width: 768px) {
+                            height: 400px;
+                        }
+                        @media (max-width: 768px) {
+                            height: 200px;
+                        }
+                    }
+                }
             }
 
             .star-works .work {
@@ -159,6 +228,12 @@
                 background-size: cover;
                 background-position: center center;
                 background-repeat: no-repeat;
+                @media (max-width: 768px) {
+                    height: 400px;
+                }
+                @media (max-width: 768px) {
+                    height: 200px;
+                }
             }
 
             .work1{
@@ -200,6 +275,12 @@
                 img{
                     width: 256px;
                     height: auto;
+                    @media (max-width: 768px) {
+                        width: 160px;
+                    }
+                }
+                @media (max-width: 768px) {
+                    height: 50px;
                 }
             }
         }
@@ -228,15 +309,28 @@
             justify-content: center;
             align-items: center;
             position: relative;
+            @media (max-width: 768px) {
+                height: 900px;
+            }
 
             .title{
+                font-size: 40px;
                 text-transform: uppercase;
                 font-weight: 900;
+
+                @media (max-width: 768px) {
+                    font-size: 30px;
+                }
             }
 
             .splide{
                 margin-top: 50px;
                 width: 40%;
+
+                @media (max-width: 768px) {
+                    margin-top: 0px;
+                    width: 60%;
+                }
             }
 
             .splide__slide{
@@ -250,6 +344,10 @@
                 font-size: 22px;
                 color: #377493;
                 font-weight: 300;
+
+                @media (max-width: 768px) {
+                    font-size: 16px;
+                }
             }
 
             .review-slide-avatar{
@@ -259,6 +357,10 @@
                 border-radius: 50%;
                 overflow: hidden;
                 flex-shrink: 0;
+                @media (max-width: 768px) {
+                    width: 100px;
+                    height: 100px;
+                }
             }
 
             .review-slide-avatar img{
@@ -273,12 +375,18 @@
                 color: #377493;
                 font-weight: bold;
                 font-size: 24px;
+                @media (max-width: 768px) {
+                    font-size: 20px;
+                }
             }
 
             .review-slide-role{
                 color: #377493;
                 font-weight: 400;
                 font-size: 18px;
+                @media (max-width: 768px) {
+                    font-size: 16px;
+                }
             }
 
             .splide__arrow{
@@ -309,6 +417,9 @@
             .review-social-link{
                 width: 32px;
                 height: auto;
+                @media (max-width: 768px) {
+                    width: 24px;
+                }
             }
 
             .review-social-link img{
@@ -321,10 +432,16 @@
         }
     }
 
-    @media (max-width: 1440px) {
-        .heading-video{
-            margin-top: 100px;
+    @media (min-width: 2560px){
+        .heading{
+            height: 1253px;
         }
+        .leaves{
+            bottom: -115px;
+        }
+    }
+
+    @media (max-width: 1440px) {
         .heading-bg{
             width: 1440px;
         }
@@ -358,18 +475,29 @@
     }
 
     @media (max-width: 1024px) {
-        .heading-bg{
-            width: 1024px;
+        .about-page__bg{
+            margin-top: 150px;
+        }
+        .about-main{
+            margin-top: 100px;
+        }
+        .heading{
+            height: 500px;
         }
         .meet-bg{
             width: 1024px;
         }
         .heading-video{
-            width: 600px;
+            width: 500px;
             margin-top: 0px;
         }
-        .leaves{
-            bottom: -200px;
+        .heading{
+            .leaves{
+                bottom: -60px;
+            }
+        }
+        .heading-title{
+            top: 70%;
         }
         .heading-title__text{
             font-size: 20px;
@@ -426,7 +554,11 @@
             width: 768px;
         }
         .heading-video{
-            margin-top: 50px;
+            margin-top: 0px;
+            width: 400px;
+        }
+        .heading-title{
+            top: 55%;
         }
         .leaves{
             bottom: -112px;
@@ -445,43 +577,26 @@
         }
     }
 
-    @media (max-width: 425px) {
-        .heading-bg{
-            width: 425px;
+    @media (max-width: 425px){
+        .about-page__bg{
+            width: 320px;
+            height: 200px;
+            margin-top: 100px;
         }
-        .meet-bg{
-            width: 425px;
-            height: 230px;
+        .heading{
+            height: 300px;
         }
         .heading-video{
+            margin-top: 30px;
             width: 200px;
-            margin-top: 25px;
         }
         .heading-title__text{
             font-size: 10px;
         }
-        .leaves {
-            bottom: -69px;
-        }
-        .title{
-            font-size: 20px;
-        }
-        .title-desc{
-            width: 200px;
-            top: 32px;
-        }
-        .meet-sticker img{
-            width: 100px;
-            border-radius: 0px 0px 50px 0px;
-        }
-        .meet-content__title{
-            font-size: 10px;
-        }
-        .meet-content__desc{
-            font-size: 10px;
-        }
-        .meet-content .text{
-            font-size: 8px;
+        .heading{
+            .leaves{
+                bottom: -20px;
+            }
         }
     }
 }

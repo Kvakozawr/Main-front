@@ -73,7 +73,7 @@
                     z-index: 2;
                     position: relative;
                     top: -20px;
-                    left: 300px;
+                    left: 10%;
                     display: inline-flex;
                     align-items: center;
                     .image{
@@ -145,7 +145,7 @@
                 .services{
                     z-index: 2;
                     position: relative;
-                    width: 900px;
+                    width: 40%;
                     height: 50%;
                     display: flex;
                     flex-direction: column;
@@ -173,9 +173,18 @@
                             font-size: 26px;
                             font-weight: 700;
                             margin-bottom: 10px;
+
+                            @media (max-width: 1440px){
+                                font-size: 20px;
+                            }
+
+                            @media (max-width: 1024px){
+                                font-size: 16px;
+                            }
                         }
 
                         .expressions{
+                            text-align: center;
                             color: #443252;
                         }
 
@@ -188,6 +197,10 @@
                             background: white;
                             border-radius: 30px;
                             border: 1px dashed #92beea;
+
+                            @media (max-width: 1024px){
+                                font-size: 16px;
+                            }
                         }
                     }
                 }
@@ -198,12 +211,15 @@
                 flex-direction: column;
                 align-items: center;
                 .services-desc{
-                    margin-left: 170px;
+                    margin-left: 5%;
                     align-self: flex-start;
                     .edit-info{
                         color: #92beea;
                         font-weight: 300;
                         text-transform: uppercase;
+                        @media (max-width: 1440px){
+                            font-size: 14px;
+                        }
                         .amount{
                             color: rgb(68, 50, 82);
                             font-weight: inherit;
@@ -215,6 +231,9 @@
                         color: #92beea;
                         font-weight: 300;
                         text-transform: uppercase;
+                        @media (max-width: 1440px){
+                            font-size: 14px;
+                        }
                         .bold{
                             color: #92beea;
                             font-weight: bold;
@@ -232,6 +251,10 @@
                     font-weight: 300;
                     font-size: 24px;
                     padding: 10px 30px;
+
+                    @media (max-width: 1024px){
+                        font-size: 20px;
+                    }
                 }
             }
             .discount{
@@ -243,6 +266,10 @@
                 bottom: 85px;
                 left: 50%;
                 transform: translateX(-50%);
+
+                @media (max-width: 1440px){
+                    bottom: 104px;
+                }
                 .percent{
                     display: inline;
                     position: relative;
@@ -281,6 +308,24 @@
                         font-weight: 400;
                         font-style: italic;
                     }
+
+                    @media (max-width: 1440px){
+                        .text-1{
+                            font-size: 16px;
+                        }
+                        .text-2{
+                            font-size: 16px;
+                        }
+                    }
+
+                    @media (max-width: 1024px){
+                        .text-1{
+                            font-size: 12px;
+                        }
+                        .text-2{
+                            font-size: 12px;
+                        }
+                    }
                 }
             }
             .examples-left{
@@ -297,6 +342,9 @@
                 display: grid;
                 grid-template-columns: repeat(3, 96px);
                 gap: 20px;
+                @media (max-width: 1440px){
+                    grid-template-columns: repeat(3, 60px);
+                }
                 .example{
                     width: 96px;
                     height: 96px;
@@ -304,41 +352,18 @@
                         width: 100%;
                         height: 100%;
                     }
+
+                    @media (max-width: 1440px){
+                        width: 80px;
+                        height: 80px;
+                    }
+
+                    @media (max-width: 1440px){
+                        width: 60px;
+                        height: 60px;
+                    }
                 }
             }
         }
     }
-}
-
-@media (max-width: 1440px){
-    .emotes-page{
-        .services-desc{
-            margin-left: 75px !important;
-        }
-        .service{
-            .name{
-                font-size: 20px !important;
-            }
-            .amount{
-                font-size: 18px !important;
-            }
-        }
-
-        .example{
-            width: 80px !important;
-            height: 80px !important;
-        }
-
-        .edit-info, .additional{
-            font-size: 14px !important;
-        }
-
-        .text-1, .text-2{
-            font-size: 18px !important;
-        }
-    }
-}
-
-@media (max-width: 1024px){
-    
 }

@@ -1,4 +1,4 @@
-let bg = document.querySelector('.services-bg');
+let bg = document.querySelector('.services-page__bg');
 window.addEventListener('mousemove', function(e) {
     let x = e.clientX / window.innerWidth;
     let y = e.clientY / window.innerHeight;  

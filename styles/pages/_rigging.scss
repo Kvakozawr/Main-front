@@ -1,4 +1,10 @@
 .rigging-page{
+    @media (max-width: 1440px){
+        zoom: 90%;
+    }
+    @media (max-width: 1024px){
+        zoom: 80%;
+    }
     .page-container{
         max-width: none;
         width: 100%;
@@ -73,7 +79,7 @@
                     z-index: 2;
                     position: relative;
                     top: -20px;
-                    left: 300px;
+                    left: 10%;
                     display: inline-flex;
                     align-items: center;
                     .image{
@@ -145,7 +151,7 @@
                 .services{
                     z-index: 2;
                     position: relative;
-                    width: 900px;
+                    width: 50%;
                     height: 50%;
                     display: flex;
                     flex-direction: column;
@@ -173,6 +179,10 @@
                             font-size: 26px;
                             font-weight: 700;
                             margin-bottom: 10px;
+
+                            @media (max-width: 1024px){
+                                font-size: 20px;
+                            }
                         }
 
                         .expressions{
