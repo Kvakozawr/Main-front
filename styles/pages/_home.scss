@@ -579,7 +579,7 @@
 
     @media (max-width: 425px){
         .about-page__bg{
-            width: 320px;
+            width: 425px;
             height: 200px;
             margin-top: 100px;
         }
@@ -597,6 +597,14 @@
             .leaves{
                 bottom: -20px;
             }
+        }
+    }
+
+    @media (max-width: 320px){
+        .about-page__bg{
+            width: 320px;
+            height: 200px;
+            margin-top: 100px;
         }
     }
 }
