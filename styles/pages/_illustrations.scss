@@ -1,6 +1,4 @@
-// Concept art & reference sheets + vtuber model art
-
-.concept-page{
+.emotes-page{
     .page-container{
         max-width: none;
         width: 100%;
@@ -125,12 +123,16 @@
     
     .contractors-cards{
         margin-top: 100px;
-        @media (max-width: 425px){
-            margin-top: 30px;
-        }
         .contractor-card{
             position: relative;
             margin-bottom: 100px;
+
+            @media (max-width: 768px){
+                margin-bottom: 350px;
+            }
+            @media (max-width: 425px){
+                margin-bottom: 250px;
+            }
             .card-header{
                 position: relative;
                 .line{
@@ -175,31 +177,29 @@
                         width: 200px;
                         height: 25px;
                     }
+                }
 
-                    @media (max-width: 768px){
-                        left: 5%;
+                @media (max-width: 768px){
+                    .name{
+                        font-size: 24px;
+                    }
+                }
 
-                        .name{
-                            font-size: 24px;
-                        }
+                @media (max-width: 375px){
+                    .image{
+                        width: 80px;
                     }
 
-                    @media (max-width: 375px){
-                        .image{
-                            width: 80px;
-                        }
+                    .name{
+                        font-size: 16px;
+                    }
 
-                        .name{
-                            font-size: 16px;
-                        }
+                    .roles{
+                        font-size: 10px;
+                    }
 
-                        .roles{
-                            font-size: 10px;
-                        }
-
-                        .status{
-                            width: 80px;
-                        }
+                    .status{
+                        width: 80px;
                     }
                 }
             }
@@ -209,6 +209,7 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+                align-items: center;
                 width: 100%;
                 height: 460px;
                 background: #f4f7ff;
@@ -233,9 +234,9 @@
                 .included{
                     z-index: 2;
                     position: relative;
-                    margin-left: 10%;
                     margin-bottom: 50px;
                     .title{
+                        text-align: center;
                         color: #443252;
                         font-size: 20px;
                         font-weight: 300;
@@ -248,24 +249,7 @@
                         text-transform: uppercase;
                     }
 
-                    @media (max-width: 768px){
-                        .title{
-                            font-size: 16px;
-                        }
-                        .text{
-                            font-size: 14px;
-                        }
-                        margin-left: 5%;
-                    }
-
                     @media (max-width: 425px){
-                        position: absolute;
-                        top: 105%;
-                        margin-left: 10%;
-                        margin-bottom: 50px;
-                    }
-
-                    @media (max-width: 375px){
                         .title{
                             font-size: 14px;
                         }
@@ -277,40 +261,59 @@
                 .services{
                     z-index: 2;
                     position: relative;
-                    margin-left: 10%;
-                    width: 50%;
+                    width: 80%;
                     height: 50%;
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
                     .divider{
+                        text-align: center;
                         color: #443252;
                         text-transform: uppercase;
                         font-size: 20px;
                         font-weight: 300;
-                        @media (max-width: 768px){
-                            font-size: 16px;
+
+                        @media (max-width: 425px){
+                            font-size: 14px;
                         }
                     }
                     .base, .extra{
-                        display: grid;
-                        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+                        display: flex;
+                        justify-content: space-between;
                     }
 
                     .service{
                         display: flex;
                         flex-direction: column;
-                        align-items: flex-start;
+                        align-items: center;
+                        width: 50%;
                         .name{
+                            text-align: center;
                             color: #92beea;
                             font-size: 26px;
                             font-weight: 700;
                             margin-bottom: 10px;
+
+                            @media (max-width: 1440px){
+                                font-size: 20px;
+                            }
+
+                            @media (max-width: 1024px){
+                                font-size: 16px;
+                            }
+
+                            @media (max-width: 425px){
+                                font-size: 14px;
+                            }
                         }
 
                         .expressions{
-                            margin-top: -10px;
+                            text-align: center;
                             color: #443252;
+
+                            @media (max-width: 425px){
+                                font-size: 12px;
+                            }
                         }
 
                         .amount{
@@ -322,45 +325,20 @@
                             background: white;
                             border-radius: 30px;
                             border: 1px dashed #92beea;
-                        }
 
-                        @media (max-width: 1440px){
-                            .name{
-                                font-size: 22px;
+                            @media (max-width: 1024px){
+                                font-size: 16px;
                             }
-                            .amount{
-                                font-size: 18px;
-                            }
-                        }
 
-                        @media (max-width: 768px){
-                            .name{
-                                font-size: 18px;
-                            }
-                            .amount{
-                                font-size: 14px;
+                            @media (max-width: 425px){
+                                font-size: 12px;
                             }
                         }
                     }
 
                     @media (max-width: 768px){
-                        margin-left: 5%;
-                    }
-
-                    @media (max-width: 425px){
-                        position: absolute;
-                        top: 120%;
-                        margin-left: 10%;
                         width: 90%;
-                        height: 40%;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: space-between;
                     }
-                }
-
-                @media (max-width: 425px){
-                    overflow: visible;
                 }
             }
             .card-footer{
@@ -369,12 +347,15 @@
                 flex-direction: column;
                 align-items: center;
                 .services-desc{
-                    margin-left: 10%;
+                    margin-left: 5%;
                     align-self: flex-start;
                     .edit-info{
                         color: #92beea;
                         font-weight: 300;
                         text-transform: uppercase;
+                        @media (max-width: 1440px){
+                            font-size: 14px;
+                        }
                         .amount{
                             color: rgb(68, 50, 82);
                             font-weight: inherit;
@@ -386,6 +367,14 @@
                         color: #92beea;
                         font-weight: 300;
                         text-transform: uppercase;
+                        @media (max-width: 1440px){
+                            font-size: 14px;
+                        }
+                        .bold{
+                            color: #92beea;
+                            font-weight: bold;
+                            text-transform: uppercase;
+                        }
                     }
 
                     @media (max-width: 768px){
@@ -414,47 +403,35 @@
                     font-weight: 300;
                     font-size: 24px;
                     padding: 10px 30px;
+
+                    @media (max-width: 1024px){
+                        font-size: 20px;
+                    }
+                    @media (max-width: 768px){
+                        font-size: 16px;
+                    }
+                }
+
+                .gallery {
+                    display: grid;
+                    grid-template-columns: repeat(6, 1fr);
+                    gap: 16px;
+                    grid-auto-flow: dense;
+                }
+
+                .gallery img {
+                    width: 250px;
+                    height: auto;
+                    object-fit: cover;
                 }
 
                 @media (max-width: 768px){
-                    margin-top: 70px;
-                    .request-button{
-                        font-size: 20px;
-                    }
-                }
-                @media (max-width: 425px){
-                    margin-top: 100%;
-                }
-            }
-            .card-slider{
-                width: 300px;
-                z-index: 999;
-                position: absolute;
-                right: 5%;
-                top: 50%;
-                transform: translateY(-50%);
-                .splide__arrow--prev{
-                    left: -2em;
-                }
-                .splide__arrow--next{
-                    right: -2em;
-                }
-                .splide__slide{
-                    img{
-                        width: 100%;
-                        height: 100%;
-                    }
-                }
-
-                @media (max-width: 1024px){
-                    width: 200px;
+                    position: relative;
+                    top: 300px;
                 }
 
                 @media (max-width: 425px){
-                    right: 0;
-                    left: 50%;
-                    top: 30%;
-                    transform: translateX(-50%) translateY(-50%);
+                    top: 200px;
                 }
             }
             .discount{
@@ -463,9 +440,17 @@
                 align-items: center;
                 z-index: 999;
                 position: absolute;
-                top: 50%;
-                right: 30%;
-                transform: translateY(-50%);
+                bottom: 85px;
+                left: 50%;
+                transform: translateX(-50%);
+
+                @media (max-width: 1440px){
+                    bottom: 104px;
+                }
+
+                @media (max-width: 425px){
+                    bottom: 144px;
+                }
                 .percent{
                     display: inline;
                     position: relative;
@@ -504,46 +489,97 @@
                         font-weight: 400;
                         font-style: italic;
                     }
-                }
 
-                @media (max-width: 1440px){
-                    .text-1, .text-2{
-                        font-size: 18px;
+                    @media (max-width: 1440px){
+                        .text-1{
+                            font-size: 16px;
+                        }
+                        .text-2{
+                            font-size: 16px;
+                        }
+                    }
+
+                    @media (max-width: 1024px){
+                        .text-1{
+                            font-size: 12px;
+                        }
+                        .text-2{
+                            font-size: 12px;
+                        }
+                    }
+                    
+                    @media (max-width: 768px){
+                        .text-1, .text-2{
+                            font-size: 16px;
+                        }
+                    }
+
+                    @media (max-width: 425px){
+                        .text-2{
+                            font-size: 14px;
+                        }
                     }
                 }
 
-                @media (max-width: 1024px){
-                    zoom: 80%;
-                    top: 52%;
-                }
-
                 @media (max-width: 768px){
-                    top: 69%;
-                    bottom: 0;
-                    right: 0;
-                    left: 50%;
-                    transform: translateX(-50%);
-                }
-
-                @media (max-width: 425px){
-                    top: 79%;
+                    zoom: 80%;
                 }
             }
-            .card-icons{
-                display: flex;
-                column-gap: 20px;
-                .icon{
-                    width: 80px;
-                    height: 80px;
-                    border-radius: 100%;
-                    border: 2px dashed #92beea;
-                    .image{
+            .examples-left{
+                left: 5%;
+            }
+            .examples-right{
+                right: 5%;
+            }
+
+            @media (max-width: 768px){
+                .examples-left{
+                    left: 10%;
+                }
+                .examples-right{
+                    right: 10%;
+                }
+            }
+            .examples{
+                z-index: 999;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                display: grid;
+                grid-template-columns: repeat(3, 96px);
+                gap: 20px;
+                @media (max-width: 1440px){
+                    grid-template-columns: repeat(3, 60px);
+                }
+                @media (max-width: 768px){
+                    top: 105%;
+                }
+                @media (max-width: 425px){
+                    top: 97%;
+                    grid-template-columns: repeat(3, 45px);
+                    gap: 5px;
+                }
+                .example{
+                    width: 96px;
+                    height: 96px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    @media (max-width: 1440px){
                         width: 80px;
                         height: 80px;
-                        border-radius: 100%;
-                        background-image: url(../../images/concept-art/1.png);
-                        background-repeat: no-repeat;
-                        background-position: center top;
+                    }
+
+                    @media (max-width: 1440px){
+                        width: 60px;
+                        height: 60px;
+                    }
+
+                    @media (max-width: 425px){
+                        width: 45px;
+                        height: 45px;
                     }
                 }
             }

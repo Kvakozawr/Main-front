@@ -15,6 +15,18 @@
         @media (max-width: 1024px){
             width: 1024px;
         }
+        @media (max-width: 768px){
+            width: 768px;
+        }
+        @media (max-width: 425px){
+            width: 425px;
+        }
+        @media (max-width: 375px){
+            width: 375px;
+        }
+        @media (max-width: 320px){
+            width: 320px;
+        }
     }
 
     .services-header{
@@ -29,6 +41,34 @@
             }
             &__desc{
                 width: 600px;
+            }
+        }
+
+        @media (max-width: 768px){
+            &__title{
+                font-size: 30px;
+            }
+            &__desc{
+                width: 500px;
+            }
+        }
+
+        @media (max-width: 425px){
+            &__title{
+                font-size: 24px;
+            }
+            &__desc{
+                width: 400px;
+                top: -24px;
+            }
+        }
+
+        @media (max-width: 320px){
+            &__title{
+                font-size: 20px;
+            }
+            &__desc{
+                width: 300px;
             }
         }
     }
@@ -62,6 +102,32 @@
                     font-size: 20px;
                 }
             }
+
+            @media (max-width: 768px){
+                .list__button{
+                    padding: 10px 20px;
+                    font-size: 18px;
+                }
+            }
+
+            @media (max-width: 425px){
+                .list__button{
+                    padding: 10px 30px;
+                    font-size: 16px;
+                }
+            }
+
+            @media (max-width: 320px){
+                .list__button{
+                    padding: 10px 40px;
+                    font-size: 12px;
+                }
+            }
+        }
+
+        @media (max-width: 425px){
+            display: flex;
+            justify-content: center;
         }
     }
 }

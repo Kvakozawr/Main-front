@@ -888,6 +888,26 @@ body {
     width: 1024px;
   }
 }
+@media (max-width: 768px) {
+  .services-page__bg {
+    width: 768px;
+  }
+}
+@media (max-width: 425px) {
+  .services-page__bg {
+    width: 425px;
+  }
+}
+@media (max-width: 375px) {
+  .services-page__bg {
+    width: 375px;
+  }
+}
+@media (max-width: 320px) {
+  .services-page__bg {
+    width: 320px;
+  }
+}
 .services-page .services-header__desc {
   top: -40px;
   width: 700px;
@@ -898,6 +918,31 @@ body {
   }
   .services-page .services-header__desc {
     width: 600px;
+  }
+}
+@media (max-width: 768px) {
+  .services-page .services-header__title {
+    font-size: 30px;
+  }
+  .services-page .services-header__desc {
+    width: 500px;
+  }
+}
+@media (max-width: 425px) {
+  .services-page .services-header__title {
+    font-size: 24px;
+  }
+  .services-page .services-header__desc {
+    width: 400px;
+    top: -24px;
+  }
+}
+@media (max-width: 320px) {
+  .services-page .services-header__title {
+    font-size: 20px;
+  }
+  .services-page .services-header__desc {
+    width: 300px;
   }
 }
 .services-page .services-main__list {
@@ -924,6 +969,30 @@ body {
 @media (max-width: 1440px) {
   .services-page .services-main__list .list__button {
     font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .services-page .services-main__list .list__button {
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 425px) {
+  .services-page .services-main__list .list__button {
+    padding: 10px 30px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 320px) {
+  .services-page .services-main__list .list__button {
+    padding: 10px 40px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 425px) {
+  .services-page .services-main {
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -1112,6 +1181,99 @@ body {
     width: 700px;
   }
 }
+@media (max-width: 768px) {
+  .top-left {
+    width: auto;
+  }
+  .order-page .order-title {
+    font-size: 28px;
+  }
+  .order-page .order-desc {
+    width: 600px;
+  }
+  .links-sticker {
+    top: 15px;
+    width: 200px;
+  }
+  .order-page .links-button {
+    font-size: 18px;
+  }
+  .order-page .order-text {
+    font-size: 20px;
+    width: 600px;
+  }
+  .order-page .order-links {
+    margin-top: 0;
+  }
+  .order-bg-wrapper {
+    left: 38px;
+  }
+  .left-border {
+    left: -93px;
+  }
+  .right-border {
+    right: -92px;
+  }
+}
+@media (max-width: 425px) {
+  .order-page {
+    margin-top: 100px;
+  }
+  .top-left {
+    width: 1000px;
+    top: -295px;
+    left: -300px;
+  }
+  .order-page .order-title {
+    font-size: 20px;
+  }
+  .order-page .order-desc {
+    width: 400px;
+  }
+  .links-sticker {
+    top: 14px;
+    width: 160px;
+  }
+  .order-page .links-button {
+    font-size: 14px;
+    padding: 10px 40px;
+  }
+  .order-page .order-text {
+    font-size: 16px;
+    width: 300px;
+  }
+  .order-page .order-links {
+    margin-top: 0;
+  }
+  .order-bg-wrapper {
+    left: 0px;
+  }
+  .left-border {
+    display: none;
+  }
+  .right-border {
+    display: none;
+  }
+  .dotted-lines {
+    display: none;
+  }
+}
+@media (max-width: 375px) {
+  .order-page .order-title {
+    font-size: 18px;
+  }
+  .order-page .order-desc {
+    width: 350px;
+  }
+}
+@media (max-width: 320px) {
+  .order-page .order-title {
+    font-size: 14px;
+  }
+  .order-page .order-desc {
+    width: 300px;
+  }
+}
 .tos-page .page-header .title {
   font-size: 44px;
 }
@@ -1140,6 +1302,32 @@ body {
 @media (max-width: 1440px) {
   .concept-page .page-header .title {
     font-size: 36px;
+  }
+}
+@media (max-width: 768px) {
+  .concept-page .page-header .title {
+    font-size: 30px;
+  }
+  .concept-page .page-header .title-desc {
+    width: 500px;
+  }
+}
+@media (max-width: 425px) {
+  .concept-page .page-header .title {
+    font-size: 20px;
+  }
+  .concept-page .page-header .title-desc {
+    top: -9px;
+    width: 350px;
+  }
+}
+@media (max-width: 375px) {
+  .concept-page .page-header .title {
+    font-size: 16px;
+  }
+  .concept-page .page-header .title-desc {
+    top: -9px;
+    width: 300px;
   }
 }
 .concept-page .contractors {
@@ -1174,6 +1362,16 @@ body {
   width: 100%;
   height: 100%;
 }
+@media (max-width: 768px) {
+  .concept-page .contractors-content .contractor .image {
+    width: 120px;
+  }
+}
+@media (max-width: 425px) {
+  .concept-page .contractors-content .contractor .image {
+    width: 80px;
+  }
+}
 .concept-page .contractors-content .contractor .name {
   text-transform: uppercase;
   color: #ff8196;
@@ -1190,8 +1388,34 @@ body {
   text-transform: uppercase;
   color: #377493;
 }
+@media (max-width: 768px) {
+  .concept-page .contractors-content .contractor .name {
+    font-size: 18px;
+  }
+  .concept-page .contractors-content .contractor .roles .role {
+    font-size: 12px;
+  }
+}
+@media (max-width: 425px) {
+  .concept-page .contractors-content .contractor .name {
+    font-size: 10px;
+  }
+  .concept-page .contractors-content .contractor .roles .role {
+    font-size: 8px;
+  }
+}
+@media (max-width: 375px) {
+  .concept-page .contractors-content .contractor {
+    width: calc(33.333% - 40px);
+  }
+}
 .concept-page .contractors-cards {
   margin-top: 100px;
+}
+@media (max-width: 425px) {
+  .concept-page .contractors-cards {
+    margin-top: 30px;
+  }
 }
 .concept-page .contractors-cards .contractor-card {
   position: relative;
@@ -1239,6 +1463,28 @@ body {
   width: 200px;
   height: 25px;
 }
+@media (max-width: 768px) {
+  .concept-page .contractors-cards .contractor-card .card-header-contractor {
+    left: 5%;
+  }
+  .concept-page .contractors-cards .contractor-card .card-header-contractor .name {
+    font-size: 24px;
+  }
+}
+@media (max-width: 375px) {
+  .concept-page .contractors-cards .contractor-card .card-header-contractor .image {
+    width: 80px;
+  }
+  .concept-page .contractors-cards .contractor-card .card-header-contractor .name {
+    font-size: 16px;
+  }
+  .concept-page .contractors-cards .contractor-card .card-header-contractor .roles {
+    font-size: 10px;
+  }
+  .concept-page .contractors-cards .contractor-card .card-header-contractor .status {
+    width: 80px;
+  }
+}
 .concept-page .contractors-cards .contractor-card .card-main {
   overflow: hidden;
   position: relative;
@@ -1258,6 +1504,16 @@ body {
   width: 100%;
   height: 100%;
 }
+@media (max-width: 425px) {
+  .concept-page .contractors-cards .contractor-card .card-main .left-flower {
+    width: 100%;
+    height: 100%;
+  }
+  .concept-page .contractors-cards .contractor-card .card-main .left-flower img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
 .concept-page .contractors-cards .contractor-card .card-main .included {
   z-index: 2;
   position: relative;
@@ -1276,6 +1532,33 @@ body {
   font-weight: 300;
   text-transform: uppercase;
 }
+@media (max-width: 768px) {
+  .concept-page .contractors-cards .contractor-card .card-main .included .title {
+    font-size: 16px;
+  }
+  .concept-page .contractors-cards .contractor-card .card-main .included .text {
+    font-size: 14px;
+  }
+  .concept-page .contractors-cards .contractor-card .card-main .included {
+    margin-left: 5%;
+  }
+}
+@media (max-width: 425px) {
+  .concept-page .contractors-cards .contractor-card .card-main .included {
+    position: absolute;
+    top: 105%;
+    margin-left: 10%;
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 375px) {
+  .concept-page .contractors-cards .contractor-card .card-main .included .title {
+    font-size: 14px;
+  }
+  .concept-page .contractors-cards .contractor-card .card-main .included .text {
+    font-size: 12px;
+  }
+}
 .concept-page .contractors-cards .contractor-card .card-main .services {
   z-index: 2;
   position: relative;
@@ -1291,6 +1574,11 @@ body {
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 300;
+}
+@media (max-width: 768px) {
+  .concept-page .contractors-cards .contractor-card .card-main .services .divider {
+    font-size: 16px;
+  }
 }
 .concept-page .contractors-cards .contractor-card .card-main .services .base, .concept-page .contractors-cards .contractor-card .card-main .services .extra {
   display: grid;
@@ -1329,6 +1617,36 @@ body {
     font-size: 18px;
   }
 }
+@media (max-width: 768px) {
+  .concept-page .contractors-cards .contractor-card .card-main .services .service .name {
+    font-size: 18px;
+  }
+  .concept-page .contractors-cards .contractor-card .card-main .services .service .amount {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .concept-page .contractors-cards .contractor-card .card-main .services {
+    margin-left: 5%;
+  }
+}
+@media (max-width: 425px) {
+  .concept-page .contractors-cards .contractor-card .card-main .services {
+    position: absolute;
+    top: 120%;
+    margin-left: 10%;
+    width: 90%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 425px) {
+  .concept-page .contractors-cards .contractor-card .card-main {
+    overflow: visible;
+  }
+}
 .concept-page .contractors-cards .contractor-card .card-footer {
   margin-top: 20px;
   display: flex;
@@ -1354,6 +1672,22 @@ body {
   font-weight: 300;
   text-transform: uppercase;
 }
+@media (max-width: 768px) {
+  .concept-page .contractors-cards .contractor-card .card-footer .services-desc .edit-info {
+    font-size: 14px;
+    text-align: center;
+  }
+  .concept-page .contractors-cards .contractor-card .card-footer .services-desc .additional {
+    font-size: 14px;
+    text-align: center;
+  }
+  .concept-page .contractors-cards .contractor-card .card-footer .services-desc {
+    margin-left: 0;
+    position: relative;
+    transform: translateX(-50%);
+    left: 50%;
+  }
+}
 .concept-page .contractors-cards .contractor-card .card-footer .request-button {
   margin-top: 30px;
   color: #92beea;
@@ -1363,6 +1697,19 @@ body {
   font-weight: 300;
   font-size: 24px;
   padding: 10px 30px;
+}
+@media (max-width: 768px) {
+  .concept-page .contractors-cards .contractor-card .card-footer {
+    margin-top: 70px;
+  }
+  .concept-page .contractors-cards .contractor-card .card-footer .request-button {
+    font-size: 20px;
+  }
+}
+@media (max-width: 425px) {
+  .concept-page .contractors-cards .contractor-card .card-footer {
+    margin-top: 100%;
+  }
 }
 .concept-page .contractors-cards .contractor-card .card-slider {
   width: 300px;
@@ -1385,6 +1732,14 @@ body {
 @media (max-width: 1024px) {
   .concept-page .contractors-cards .contractor-card .card-slider {
     width: 200px;
+  }
+}
+@media (max-width: 425px) {
+  .concept-page .contractors-cards .contractor-card .card-slider {
+    right: 0;
+    left: 50%;
+    top: 30%;
+    transform: translateX(-50%) translateY(-50%);
   }
 }
 .concept-page .contractors-cards .contractor-card .discount {
@@ -1439,6 +1794,26 @@ body {
 @media (max-width: 1440px) {
   .concept-page .contractors-cards .contractor-card .discount .text-1, .concept-page .contractors-cards .contractor-card .discount .text-2 {
     font-size: 18px;
+  }
+}
+@media (max-width: 1024px) {
+  .concept-page .contractors-cards .contractor-card .discount {
+    zoom: 80%;
+    top: 52%;
+  }
+}
+@media (max-width: 768px) {
+  .concept-page .contractors-cards .contractor-card .discount {
+    top: 69%;
+    bottom: 0;
+    right: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media (max-width: 425px) {
+  .concept-page .contractors-cards .contractor-card .discount {
+    top: 79%;
   }
 }
 .concept-page .contractors-cards .contractor-card .card-icons {
@@ -1771,6 +2146,37 @@ body {
   max-width: none;
   width: 100%;
 }
+@media (max-width: 1440px) {
+  .emotes-page .page-header .title {
+    font-size: 36px;
+  }
+}
+@media (max-width: 768px) {
+  .emotes-page .page-header .title {
+    font-size: 30px;
+  }
+  .emotes-page .page-header .title-desc {
+    width: 500px;
+  }
+}
+@media (max-width: 425px) {
+  .emotes-page .page-header .title {
+    font-size: 20px;
+  }
+  .emotes-page .page-header .title-desc {
+    top: -9px;
+    width: 350px;
+  }
+}
+@media (max-width: 375px) {
+  .emotes-page .page-header .title {
+    font-size: 16px;
+  }
+  .emotes-page .page-header .title-desc {
+    top: -9px;
+    width: 300px;
+  }
+}
 .emotes-page .contractors {
   background-image: url(../../images/concept-art/bg.png);
   background-repeat: no-repeat;
@@ -1803,6 +2209,16 @@ body {
   width: 100%;
   height: 100%;
 }
+@media (max-width: 768px) {
+  .emotes-page .contractors-content .contractor .image {
+    width: 120px;
+  }
+}
+@media (max-width: 425px) {
+  .emotes-page .contractors-content .contractor .image {
+    width: 80px;
+  }
+}
 .emotes-page .contractors-content .contractor .name {
   text-transform: uppercase;
   color: #ff8196;
@@ -1819,12 +2235,43 @@ body {
   text-transform: uppercase;
   color: #377493;
 }
+@media (max-width: 768px) {
+  .emotes-page .contractors-content .contractor .name {
+    font-size: 18px;
+  }
+  .emotes-page .contractors-content .contractor .roles .role {
+    font-size: 12px;
+  }
+}
+@media (max-width: 425px) {
+  .emotes-page .contractors-content .contractor .name {
+    font-size: 10px;
+  }
+  .emotes-page .contractors-content .contractor .roles .role {
+    font-size: 8px;
+  }
+}
+@media (max-width: 375px) {
+  .emotes-page .contractors-content .contractor {
+    width: calc(33.333% - 40px);
+  }
+}
 .emotes-page .contractors-cards {
   margin-top: 100px;
 }
 .emotes-page .contractors-cards .contractor-card {
   position: relative;
   margin-bottom: 100px;
+}
+@media (max-width: 768px) {
+  .emotes-page .contractors-cards .contractor-card {
+    margin-bottom: 350px;
+  }
+}
+@media (max-width: 425px) {
+  .emotes-page .contractors-cards .contractor-card {
+    margin-bottom: 250px;
+  }
 }
 .emotes-page .contractors-cards .contractor-card .card-header {
   position: relative;
@@ -1868,6 +2315,25 @@ body {
   width: 200px;
   height: 25px;
 }
+@media (max-width: 768px) {
+  .emotes-page .contractors-cards .contractor-card .card-header .name {
+    font-size: 24px;
+  }
+}
+@media (max-width: 375px) {
+  .emotes-page .contractors-cards .contractor-card .card-header .image {
+    width: 80px;
+  }
+  .emotes-page .contractors-cards .contractor-card .card-header .name {
+    font-size: 16px;
+  }
+  .emotes-page .contractors-cards .contractor-card .card-header .roles {
+    font-size: 10px;
+  }
+  .emotes-page .contractors-cards .contractor-card .card-header .status {
+    width: 80px;
+  }
+}
 .emotes-page .contractors-cards .contractor-card .card-main {
   overflow: hidden;
   position: relative;
@@ -1888,6 +2354,16 @@ body {
   width: 100%;
   height: 100%;
 }
+@media (max-width: 425px) {
+  .emotes-page .contractors-cards .contractor-card .card-main .left-flower {
+    width: 100%;
+    height: 100%;
+  }
+  .emotes-page .contractors-cards .contractor-card .card-main .left-flower img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
 .emotes-page .contractors-cards .contractor-card .card-main .included {
   z-index: 2;
   position: relative;
@@ -1906,6 +2382,14 @@ body {
   font-weight: 300;
   text-transform: uppercase;
 }
+@media (max-width: 425px) {
+  .emotes-page .contractors-cards .contractor-card .card-main .included .title {
+    font-size: 14px;
+  }
+  .emotes-page .contractors-cards .contractor-card .card-main .included .text {
+    font-size: 12px;
+  }
+}
 .emotes-page .contractors-cards .contractor-card .card-main .services {
   z-index: 2;
   position: relative;
@@ -1921,6 +2405,11 @@ body {
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 300;
+}
+@media (max-width: 425px) {
+  .emotes-page .contractors-cards .contractor-card .card-main .services .divider {
+    font-size: 14px;
+  }
 }
 .emotes-page .contractors-cards .contractor-card .card-main .services .base, .emotes-page .contractors-cards .contractor-card .card-main .services .extra {
   display: flex;
@@ -1949,9 +2438,19 @@ body {
     font-size: 16px;
   }
 }
+@media (max-width: 425px) {
+  .emotes-page .contractors-cards .contractor-card .card-main .services .service .name {
+    font-size: 14px;
+  }
+}
 .emotes-page .contractors-cards .contractor-card .card-main .services .service .expressions {
   text-align: center;
   color: #443252;
+}
+@media (max-width: 425px) {
+  .emotes-page .contractors-cards .contractor-card .card-main .services .service .expressions {
+    font-size: 12px;
+  }
 }
 .emotes-page .contractors-cards .contractor-card .card-main .services .service .amount {
   text-transform: uppercase;
@@ -1966,6 +2465,16 @@ body {
 @media (max-width: 1024px) {
   .emotes-page .contractors-cards .contractor-card .card-main .services .service .amount {
     font-size: 16px;
+  }
+}
+@media (max-width: 425px) {
+  .emotes-page .contractors-cards .contractor-card .card-main .services .service .amount {
+    font-size: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .emotes-page .contractors-cards .contractor-card .card-main .services {
+    width: 90%;
   }
 }
 .emotes-page .contractors-cards .contractor-card .card-footer {
@@ -2008,6 +2517,22 @@ body {
   font-weight: bold;
   text-transform: uppercase;
 }
+@media (max-width: 768px) {
+  .emotes-page .contractors-cards .contractor-card .card-footer .services-desc .edit-info {
+    font-size: 14px;
+    text-align: center;
+  }
+  .emotes-page .contractors-cards .contractor-card .card-footer .services-desc .additional {
+    font-size: 14px;
+    text-align: center;
+  }
+  .emotes-page .contractors-cards .contractor-card .card-footer .services-desc {
+    margin-left: 0;
+    position: relative;
+    transform: translateX(-50%);
+    left: 50%;
+  }
+}
 .emotes-page .contractors-cards .contractor-card .card-footer .request-button {
   margin-top: 30px;
   color: #92beea;
@@ -2023,6 +2548,22 @@ body {
     font-size: 20px;
   }
 }
+@media (max-width: 768px) {
+  .emotes-page .contractors-cards .contractor-card .card-footer .request-button {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .emotes-page .contractors-cards .contractor-card .card-footer {
+    position: relative;
+    top: 300px;
+  }
+}
+@media (max-width: 425px) {
+  .emotes-page .contractors-cards .contractor-card .card-footer {
+    top: 200px;
+  }
+}
 .emotes-page .contractors-cards .contractor-card .discount {
   display: flex;
   flex-direction: column;
@@ -2036,6 +2577,11 @@ body {
 @media (max-width: 1440px) {
   .emotes-page .contractors-cards .contractor-card .discount {
     bottom: 104px;
+  }
+}
+@media (max-width: 425px) {
+  .emotes-page .contractors-cards .contractor-card .discount {
+    bottom: 144px;
   }
 }
 .emotes-page .contractors-cards .contractor-card .discount .percent {
@@ -2093,11 +2639,34 @@ body {
     font-size: 12px;
   }
 }
+@media (max-width: 768px) {
+  .emotes-page .contractors-cards .contractor-card .discount .text .text-1, .emotes-page .contractors-cards .contractor-card .discount .text .text-2 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 425px) {
+  .emotes-page .contractors-cards .contractor-card .discount .text .text-2 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .emotes-page .contractors-cards .contractor-card .discount {
+    zoom: 80%;
+  }
+}
 .emotes-page .contractors-cards .contractor-card .examples-left {
   left: 5%;
 }
 .emotes-page .contractors-cards .contractor-card .examples-right {
   right: 5%;
+}
+@media (max-width: 768px) {
+  .emotes-page .contractors-cards .contractor-card .examples-left {
+    left: 10%;
+  }
+  .emotes-page .contractors-cards .contractor-card .examples-right {
+    right: 10%;
+  }
 }
 .emotes-page .contractors-cards .contractor-card .examples {
   z-index: 999;
@@ -2111,6 +2680,18 @@ body {
 @media (max-width: 1440px) {
   .emotes-page .contractors-cards .contractor-card .examples {
     grid-template-columns: repeat(3, 60px);
+  }
+}
+@media (max-width: 768px) {
+  .emotes-page .contractors-cards .contractor-card .examples {
+    top: 105%;
+  }
+}
+@media (max-width: 425px) {
+  .emotes-page .contractors-cards .contractor-card .examples {
+    top: 97%;
+    grid-template-columns: repeat(3, 45px);
+    gap: 5px;
   }
 }
 .emotes-page .contractors-cards .contractor-card .examples .example {
@@ -2131,6 +2712,12 @@ body {
   .emotes-page .contractors-cards .contractor-card .examples .example {
     width: 60px;
     height: 60px;
+  }
+}
+@media (max-width: 425px) {
+  .emotes-page .contractors-cards .contractor-card .examples .example {
+    width: 45px;
+    height: 45px;
   }
 }
 
@@ -3222,5 +3809,596 @@ body.modal-open {
 @media (max-width: 1440px) {
   .reviews-page .page-container {
     padding: 40px 100px;
+  }
+}
+
+.emotes-page .page-container {
+  max-width: none;
+  width: 100%;
+}
+@media (max-width: 1440px) {
+  .emotes-page .page-header .title {
+    font-size: 36px;
+  }
+}
+@media (max-width: 768px) {
+  .emotes-page .page-header .title {
+    font-size: 30px;
+  }
+  .emotes-page .page-header .title-desc {
+    width: 500px;
+  }
+}
+@media (max-width: 425px) {
+  .emotes-page .page-header .title {
+    font-size: 20px;
+  }
+  .emotes-page .page-header .title-desc {
+    top: -9px;
+    width: 350px;
+  }
+}
+@media (max-width: 375px) {
+  .emotes-page .page-header .title {
+    font-size: 16px;
+  }
+  .emotes-page .page-header .title-desc {
+    top: -9px;
+    width: 300px;
+  }
+}
+.emotes-page .contractors {
+  background-image: url(../../images/concept-art/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 50px;
+}
+.emotes-page .contractors-content {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 70px;
+       column-gap: 70px;
+  row-gap: 10px;
+  justify-content: center;
+}
+.emotes-page .contractors-content .contractor {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(33.333% - 70px);
+  max-width: 400px;
+}
+.emotes-page .contractors-content .contractor .image {
+  width: 160px;
+  height: auto;
+}
+.emotes-page .contractors-content .contractor .image img {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 768px) {
+  .emotes-page .contractors-content .contractor .image {
+    width: 120px;
+  }
+}
+@media (max-width: 425px) {
+  .emotes-page .contractors-content .contractor .image {
+    width: 80px;
+  }
+}
+.emotes-page .contractors-content .contractor .name {
+  text-transform: uppercase;
+  color: #ff8196;
+  font-size: 20px;
+  font-weight: 900;
+}
+.emotes-page .contractors-content .contractor .roles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.emotes-page .contractors-content .contractor .roles .role {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #377493;
+}
+@media (max-width: 768px) {
+  .emotes-page .contractors-content .contractor .name {
+    font-size: 18px;
+  }
+  .emotes-page .contractors-content .contractor .roles .role {
+    font-size: 12px;
+  }
+}
+@media (max-width: 425px) {
+  .emotes-page .contractors-content .contractor .name {
+    font-size: 10px;
+  }
+  .emotes-page .contractors-content .contractor .roles .role {
+    font-size: 8px;
+  }
+}
+@media (max-width: 375px) {
+  .emotes-page .contractors-content .contractor {
+    width: calc(33.333% - 40px);
+  }
+}
+.emotes-page .contractors-cards {
+  margin-top: 100px;
+}
+.emotes-page .contractors-cards .contractor-card {
+  position: relative;
+  margin-bottom: 100px;
+}
+@media (max-width: 768px) {
+  .emotes-page .contractors-cards .contractor-card {
+    margin-bottom: 350px;
+  }
+}
+@media (max-width: 425px) {
+  .emotes-page .contractors-cards .contractor-card {
+    margin-bottom: 250px;
+  }
+}
+.emotes-page .contractors-cards .contractor-card .card-header {
+  position: relative;
+}
+.emotes-page .contractors-cards .contractor-card .card-header .line {
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  border-top: 1px dashed #92beea;
+}
+.emotes-page .contractors-cards .contractor-card .card-header-contractor {
+  max-width: 1400px;
+  z-index: 2;
+  position: relative;
+  top: -20px;
+  left: 10%;
+  display: inline-flex;
+  align-items: center;
+}
+.emotes-page .contractors-cards .contractor-card .card-header-contractor .image {
+  width: 120px;
+  height: auto;
+}
+.emotes-page .contractors-cards .contractor-card .card-header-contractor .image img {
+  width: 100%;
+  height: 100%;
+}
+.emotes-page .contractors-cards .contractor-card .card-header-contractor .name {
+  color: #92beea;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 900;
+}
+.emotes-page .contractors-cards .contractor-card .card-header-contractor .roles {
+  font-weight: 300;
+  color: #443252;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.emotes-page .contractors-cards .contractor-card .card-header-contractor .status {
+  width: 200px;
+  height: 25px;
+}
+@media (max-width: 768px) {
+  .emotes-page .contractors-cards .contractor-card .card-header .name {
+    font-size: 24px;
+  }
+}
+@media (max-width: 375px) {
+  .emotes-page .contractors-cards .contractor-card .card-header .image {
+    width: 80px;
+  }
+  .emotes-page .contractors-cards .contractor-card .card-header .name {
+    font-size: 16px;
+  }
+  .emotes-page .contractors-cards .contractor-card .card-header .roles {
+    font-size: 10px;
+  }
+  .emotes-page .contractors-cards .contractor-card .card-header .status {
+    width: 80px;
+  }
+}
+.emotes-page .contractors-cards .contractor-card .card-main {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 460px;
+  background: #f4f7ff;
+}
+.emotes-page .contractors-cards .contractor-card .card-main .left-flower {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.emotes-page .contractors-cards .contractor-card .card-main .left-flower img {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 425px) {
+  .emotes-page .contractors-cards .contractor-card .card-main .left-flower {
+    width: 100%;
+    height: 100%;
+  }
+  .emotes-page .contractors-cards .contractor-card .card-main .left-flower img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+.emotes-page .contractors-cards .contractor-card .card-main .included {
+  z-index: 2;
+  position: relative;
+  margin-bottom: 50px;
+}
+.emotes-page .contractors-cards .contractor-card .card-main .included .title {
+  text-align: center;
+  color: #443252;
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.emotes-page .contractors-cards .contractor-card .card-main .included .text {
+  color: #92beea;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+@media (max-width: 425px) {
+  .emotes-page .contractors-cards .contractor-card .card-main .included .title {
+    font-size: 14px;
+  }
+  .emotes-page .contractors-cards .contractor-card .card-main .included .text {
+    font-size: 12px;
+  }
+}
+.emotes-page .contractors-cards .contractor-card .card-main .services {
+  z-index: 2;
+  position: relative;
+  width: 80%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.emotes-page .contractors-cards .contractor-card .card-main .services .divider {
+  text-align: center;
+  color: #443252;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 300;
+}
+@media (max-width: 425px) {
+  .emotes-page .contractors-cards .contractor-card .card-main .services .divider {
+    font-size: 14px;
+  }
+}
+.emotes-page .contractors-cards .contractor-card .card-main .services .base, .emotes-page .contractors-cards .contractor-card .card-main .services .extra {
+  display: flex;
+  justify-content: space-between;
+}
+.emotes-page .contractors-cards .contractor-card .card-main .services .service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+.emotes-page .contractors-cards .contractor-card .card-main .services .service .name {
+  text-align: center;
+  color: #92beea;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+@media (max-width: 1440px) {
+  .emotes-page .contractors-cards .contractor-card .card-main .services .service .name {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  .emotes-page .contractors-cards .contractor-card .card-main .services .service .name {
+    font-size: 16px;
+  }
+}
+@media (max-width: 425px) {
+  .emotes-page .contractors-cards .contractor-card .card-main .services .service .name {
+    font-size: 14px;
+  }
+}
+.emotes-page .contractors-cards .contractor-card .card-main .services .service .expressions {
+  text-align: center;
+  color: #443252;
+}
+@media (max-width: 425px) {
+  .emotes-page .contractors-cards .contractor-card .card-main .services .service .expressions {
+    font-size: 12px;
+  }
+}
+.emotes-page .contractors-cards .contractor-card .card-main .services .service .amount {
+  text-transform: uppercase;
+  padding: 5px 15px;
+  color: #443252;
+  font-weight: 300;
+  font-size: 20px;
+  background: white;
+  border-radius: 30px;
+  border: 1px dashed #92beea;
+}
+@media (max-width: 1024px) {
+  .emotes-page .contractors-cards .contractor-card .card-main .services .service .amount {
+    font-size: 16px;
+  }
+}
+@media (max-width: 425px) {
+  .emotes-page .contractors-cards .contractor-card .card-main .services .service .amount {
+    font-size: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .emotes-page .contractors-cards .contractor-card .card-main .services {
+    width: 90%;
+  }
+}
+.emotes-page .contractors-cards .contractor-card .card-footer {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.emotes-page .contractors-cards .contractor-card .card-footer .services-desc {
+  margin-left: 5%;
+  align-self: flex-start;
+}
+.emotes-page .contractors-cards .contractor-card .card-footer .services-desc .edit-info {
+  color: #92beea;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+@media (max-width: 1440px) {
+  .emotes-page .contractors-cards .contractor-card .card-footer .services-desc .edit-info {
+    font-size: 14px;
+  }
+}
+.emotes-page .contractors-cards .contractor-card .card-footer .services-desc .edit-info .amount {
+  color: rgb(68, 50, 82);
+  font-weight: inherit;
+  text-transform: inherit;
+}
+.emotes-page .contractors-cards .contractor-card .card-footer .services-desc .additional {
+  color: #92beea;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+@media (max-width: 1440px) {
+  .emotes-page .contractors-cards .contractor-card .card-footer .services-desc .additional {
+    font-size: 14px;
+  }
+}
+.emotes-page .contractors-cards .contractor-card .card-footer .services-desc .additional .bold {
+  color: #92beea;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+@media (max-width: 768px) {
+  .emotes-page .contractors-cards .contractor-card .card-footer .services-desc .edit-info {
+    font-size: 14px;
+    text-align: center;
+  }
+  .emotes-page .contractors-cards .contractor-card .card-footer .services-desc .additional {
+    font-size: 14px;
+    text-align: center;
+  }
+  .emotes-page .contractors-cards .contractor-card .card-footer .services-desc {
+    margin-left: 0;
+    position: relative;
+    transform: translateX(-50%);
+    left: 50%;
+  }
+}
+.emotes-page .contractors-cards .contractor-card .card-footer .request-button {
+  margin-top: 30px;
+  color: #92beea;
+  border-radius: 30px;
+  border: 1px dashed #92beea;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 24px;
+  padding: 10px 30px;
+}
+@media (max-width: 1024px) {
+  .emotes-page .contractors-cards .contractor-card .card-footer .request-button {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .emotes-page .contractors-cards .contractor-card .card-footer .request-button {
+    font-size: 16px;
+  }
+}
+.emotes-page .contractors-cards .contractor-card .card-footer .gallery {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px;
+  grid-auto-flow: dense;
+}
+.emotes-page .contractors-cards .contractor-card .card-footer .gallery img {
+  width: 250px;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 768px) {
+  .emotes-page .contractors-cards .contractor-card .card-footer {
+    position: relative;
+    top: 300px;
+  }
+}
+@media (max-width: 425px) {
+  .emotes-page .contractors-cards .contractor-card .card-footer {
+    top: 200px;
+  }
+}
+.emotes-page .contractors-cards .contractor-card .discount {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 999;
+  position: absolute;
+  bottom: 85px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media (max-width: 1440px) {
+  .emotes-page .contractors-cards .contractor-card .discount {
+    bottom: 104px;
+  }
+}
+@media (max-width: 425px) {
+  .emotes-page .contractors-cards .contractor-card .discount {
+    bottom: 144px;
+  }
+}
+.emotes-page .contractors-cards .contractor-card .discount .percent {
+  display: inline;
+  position: relative;
+}
+.emotes-page .contractors-cards .contractor-card .discount .percent .amount {
+  display: inline;
+  z-index: 1;
+  position: relative;
+  color: #92beea;
+  font-size: 50px;
+  font-weight: 900;
+}
+.emotes-page .contractors-cards .contractor-card .discount .percent .symbol {
+  z-index: 2;
+  position: absolute;
+  bottom: -14px;
+  right: -29px;
+  color: #443252;
+  font-size: 40px;
+  font-weight: 900;
+}
+.emotes-page .contractors-cards .contractor-card .discount .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.emotes-page .contractors-cards .contractor-card .discount .text-1 {
+  text-transform: uppercase;
+  color: #443252;
+  font-size: 20px;
+  font-weight: 400;
+}
+.emotes-page .contractors-cards .contractor-card .discount .text-2 {
+  text-transform: uppercase;
+  color: #92beea;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: italic;
+}
+@media (max-width: 1440px) {
+  .emotes-page .contractors-cards .contractor-card .discount .text .text-1 {
+    font-size: 16px;
+  }
+  .emotes-page .contractors-cards .contractor-card .discount .text .text-2 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1024px) {
+  .emotes-page .contractors-cards .contractor-card .discount .text .text-1 {
+    font-size: 12px;
+  }
+  .emotes-page .contractors-cards .contractor-card .discount .text .text-2 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .emotes-page .contractors-cards .contractor-card .discount .text .text-1, .emotes-page .contractors-cards .contractor-card .discount .text .text-2 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 425px) {
+  .emotes-page .contractors-cards .contractor-card .discount .text .text-2 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .emotes-page .contractors-cards .contractor-card .discount {
+    zoom: 80%;
+  }
+}
+.emotes-page .contractors-cards .contractor-card .examples-left {
+  left: 5%;
+}
+.emotes-page .contractors-cards .contractor-card .examples-right {
+  right: 5%;
+}
+@media (max-width: 768px) {
+  .emotes-page .contractors-cards .contractor-card .examples-left {
+    left: 10%;
+  }
+  .emotes-page .contractors-cards .contractor-card .examples-right {
+    right: 10%;
+  }
+}
+.emotes-page .contractors-cards .contractor-card .examples {
+  z-index: 999;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: grid;
+  grid-template-columns: repeat(3, 96px);
+  gap: 20px;
+}
+@media (max-width: 1440px) {
+  .emotes-page .contractors-cards .contractor-card .examples {
+    grid-template-columns: repeat(3, 60px);
+  }
+}
+@media (max-width: 768px) {
+  .emotes-page .contractors-cards .contractor-card .examples {
+    top: 105%;
+  }
+}
+@media (max-width: 425px) {
+  .emotes-page .contractors-cards .contractor-card .examples {
+    top: 97%;
+    grid-template-columns: repeat(3, 45px);
+    gap: 5px;
+  }
+}
+.emotes-page .contractors-cards .contractor-card .examples .example {
+  width: 96px;
+  height: 96px;
+}
+.emotes-page .contractors-cards .contractor-card .examples .example img {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 1440px) {
+  .emotes-page .contractors-cards .contractor-card .examples .example {
+    width: 80px;
+    height: 80px;
+  }
+}
+@media (max-width: 1440px) {
+  .emotes-page .contractors-cards .contractor-card .examples .example {
+    width: 60px;
+    height: 60px;
+  }
+}
+@media (max-width: 425px) {
+  .emotes-page .contractors-cards .contractor-card .examples .example {
+    width: 45px;
+    height: 45px;
   }
 }/*# sourceMappingURL=styles.css.map */
